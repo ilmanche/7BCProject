@@ -8,6 +8,9 @@ namespace PLCLibrary
 {
     public  class SolarRLModel
     {
-        public double val { get; set; }
+        public int nummer { get; }
+        public double solar_rl { get; set; }
+        public string timestamp { get; set; }
+        public int plcNummer { get; }
     }
 }

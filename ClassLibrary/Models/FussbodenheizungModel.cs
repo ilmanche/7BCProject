@@ -1,4 +1,4 @@
-namespace PLCLibrary
+namespace ClassLibrary
 {
     public class FusbodenheizungModel
     {

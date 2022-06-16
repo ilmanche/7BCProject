@@ -40,6 +40,7 @@ namespace WindowsFormsApp
 
 
             solarPanels.Add(sol);
+
             SqliteDataAccess.SaveSolarPanel(sol);
             
 
@@ -51,6 +52,21 @@ namespace WindowsFormsApp
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             LoadSolarRl();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ausgangbtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

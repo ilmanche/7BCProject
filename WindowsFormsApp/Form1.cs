@@ -14,45 +14,29 @@ namespace WindowsFormsApp
     public partial class Form1 : Form
     {
         List<SolarRLModel> solarPanels = new List<SolarRLModel>();
+        List<AussenluftModel> aussenLuft = new List<AussenluftModel>();
+
         public Form1()
         {
             InitializeComponent();
             ApiHelper.InitializeClient();
-            LoadSolarRl();
+            LoadTemp();
         }
-        private void LoadSolarRl()
+        private void LoadTemp()
         {
             solarPanels = SqliteDataAccess.LoadSolarPanel();
-            
-           
-        }
+            aussenLuft = SqliteDataAccess.LoadAussenLuftTemp();
 
-        private void WireUpSolarRLList()
-        {
-           
-        }
-        private async void btnSolarRL_Click(object sender, EventArgs e)
-        {
-            var solardata = await SolarPanel.LoadSolarPanelData();
-
-            SolarRLModel sol = new SolarRLModel();
-            sol.Temperatur = solardata.val;
-
-
-            solarPanels.Add(sol);
-
-            SqliteDataAccess.SaveSolarPanel(sol);
-            
-
-            txtSolarRl.Text = sol.Temperatur.ToString();
 
 
         }
 
-        private void btnRefresh_Click(object sender, EventArgs e)
-        {
-            LoadSolarRl();
-        }
+
+
+        //private void btnRefresh_Click(object sender, EventArgs e)
+        //{
+        //    LoadSolarRl();
+        //}
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -68,14 +52,81 @@ namespace WindowsFormsApp
         {
 
         }
+
+      
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblAussenluft_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void eingangbtn_Click(object sender, EventArgs e)
+        {
+
+           var solardata = await SolarPanel.LoadSolarPanelData();
+           var aussenluftdata1 = await Aussenluft.LoadAlmAussen();
+           var aussenluftdata2 = await Aussenluft.LoadTempAussen();
+
+
+            SolarRLModel sol = new SolarRLModel();
+            sol.Temperatur = solardata.val;
+            solarPanels.Add(sol);
+            SqliteDataAccess.SaveSolarPanel(sol);
+
+
+            AussenluftModel alm = new AussenluftModel();
+            alm.alm_aussen_temperatur = aussenluftdata1.val;
+            alm.aussen_temperatur = aussenluftdata2.val;
+            aussenLuft.Add(alm);
+            SqliteDataAccess.SaveAußenluft(alm);
+
+
+            txtsolar.Text = sol.Temperatur.ToString();
+            txtaussen.Text = alm.aussen_temperatur.ToString();
+            txtalm.Text = alm.alm_aussen_temperatur.ToString();
+
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
 //Solaranlage
-//            var solardata = await SolarPanel.LoadSolarPanelData();
-
-//            SolarRLModel sol = new SolarRLModel();
-//            sol.Temperatur = solardata.val;
+//            
 
 //            //Aussenluftmodul
 //            var aussenluftdata1 = await Aussenluft.LoadAlmAussen();

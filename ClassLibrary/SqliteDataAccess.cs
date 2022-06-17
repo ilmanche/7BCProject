@@ -22,11 +22,30 @@ namespace ClassLibrary
 
         }
 
+
+        public static List<AussenluftModel> LoadAussenLuftTemp()
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var output = cnn.Query<AussenluftModel>("select * from Aussenluft", new DynamicParameters());
+                return output.ToList();
+            }
+
+        }
+
         public static void SaveSolarPanel(SolarRLModel solarRl)
         {
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
             {
                 cnn.Execute("insert into SolarRL (Temperatur) values (@Temperatur)", solarRl);
+            }
+        }
+
+        public static void SaveAußenluft(AussenluftModel aussen)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                cnn.Execute("insert into Aussenluft (alm_aussen_temperatur, aussen_temperatur) values (@alm_aussen_temperatur, @aussen_temperatur)", aussen);
             }
         }
 

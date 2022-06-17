@@ -1,6 +1,6 @@
 namespace ClassLibrary
 {
-    public class FusbodenheizungModel
+    public class FBHModel
     {
         public int nummer { get; }
         public double vl { get; set; }

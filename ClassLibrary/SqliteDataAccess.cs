@@ -22,6 +22,25 @@ namespace ClassLibrary
 
         }
 
+        public static List<WPModel> LoadWPModel()
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var output = cnn.Query<WPModel>("select * from Waermepumpe", new DynamicParameters());
+                return output.ToList();
+            }
+
+        }
+
+        public static List<PSModel> LoadPS()
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var output = cnn.Query<PSModel>("select * from SolarRL", new DynamicParameters());
+                return output.ToList();
+            }
+
+        }
 
         public static List<AussenluftModel> LoadAussenLuftTemp()
         {
@@ -33,11 +52,50 @@ namespace ClassLibrary
 
         }
 
+        public static List<FBHModel> LoadFBH()
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var output = cnn.Query<FBHModel>("select * from FBH", new DynamicParameters());
+                return output.ToList();
+            }
+
+        }
+
+        public static List<ZisterneModel> LoadZist()
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var output = cnn.Query<ZisterneModel>("select * from Zisterne", new DynamicParameters());
+                return output.ToList();
+            }
+
+        }
+
+
+
         public static void SaveSolarPanel(SolarRLModel solarRl)
         {
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
             {
-                cnn.Execute("insert into SolarRL (Temperatur) values (@Temperatur)", solarRl);
+                cnn.Execute("insert into SolarRL (Temperatur, Kollektor, date) values (@Temperatur, @Kollektor, @date)", solarRl);
+            }
+        }
+
+
+        public static void SaveZisterne(ZisterneModel zisterne)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                cnn.Execute("insert into Zisterne (Zist_unten, Zist_oben, date) values (@Zist_unten,@Zist_oben, @date)", zisterne);
+            }
+        }
+
+        public static void SaveWPModel(WPModel WPModel)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                cnn.Execute("insert into SolarRL (Temperatur, date) values (@Temperatur, @date)", WPModel);
             }
         }
 
@@ -45,9 +103,27 @@ namespace ClassLibrary
         {
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
             {
-                cnn.Execute("insert into Aussenluft (alm_aussen_temperatur, aussen_temperatur) values (@alm_aussen_temperatur, @aussen_temperatur)", aussen);
+                cnn.Execute("insert into Aussenluft (alm_aussen_temperatur, aussen_temperatur, date) values (@alm_aussen_temperatur, @aussen_temperatur, @date)", aussen);
             }
         }
+
+        public static void SaveFBH(FBHModel fbh)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                cnn.Execute("insert into FBH (fbh_vl, fbh_vr, date) values (@FBH_VL, @FBH_VR, @date)", fbh);
+            }
+        }
+
+        public static void SavePS(PSModel ps)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                cnn.Execute("insert into Pufferspeicher (ps_oben, ps_unten,PS_WW,PS_Heiz, PS_WW_Zulauf, date) values (@ps_oben, @ps_unten,@PS_WW, @PS_Heiz, @PS_WW_Zulauf, @date)", ps);
+            }
+        }
+
+
 
         private static string LoadConnectionString (string id = "Default")
         {

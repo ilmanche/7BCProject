@@ -10,6 +10,7 @@ namespace ClassLibrary
     {
         public int Id { get; set; } 
         public double Temperatur { get; set; }
-        public string timestamp { get; set; }
+        public double Kollektor { get; set; }
+        public string date { get; set; }
     }
 }

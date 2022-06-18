@@ -36,33 +36,33 @@ namespace WindowsFormsApp
             this.txtSolarRl = new System.Windows.Forms.TextBox();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.txtaussen = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtWW = new System.Windows.Forms.TextBox();
             this.lblWWZulauf = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtPSHeiz = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.txtPSWW = new System.Windows.Forms.TextBox();
+            this.txtWPInnen = new System.Windows.Forms.TextBox();
+            this.txtSoleVl = new System.Windows.Forms.TextBox();
+            this.txtSoleRl = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblwpinnen = new System.Windows.Forms.Label();
             this.lblsolev = new System.Windows.Forms.Label();
             this.lblSoleRl = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.lblSoleVl = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtKollektor = new System.Windows.Forms.TextBox();
             this.txtsolar = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtPSOben = new System.Windows.Forms.TextBox();
+            this.txtPSUnten = new System.Windows.Forms.TextBox();
             this.lblKollektor = new System.Windows.Forms.Label();
             this.lblsolarR = new System.Windows.Forms.Label();
             this.lblPSOben = new System.Windows.Forms.Label();
             this.lblPSUnten = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtZisterneOben = new System.Windows.Forms.TextBox();
             this.lblZisterneOben = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtZisterneUnten = new System.Windows.Forms.TextBox();
+            this.txtfbhRL = new System.Windows.Forms.TextBox();
+            this.txtfbhVL = new System.Windows.Forms.TextBox();
             this.txtalm = new System.Windows.Forms.TextBox();
             this.lblZisterneUnten = new System.Windows.Forms.Label();
             this.lblfbhrl = new System.Windows.Forms.Label();
@@ -76,8 +76,7 @@ namespace WindowsFormsApp
             this.headLabel = new System.Windows.Forms.Label();
             this.eingangbtn = new System.Windows.Forms.Button();
             this.ausgangbtn = new System.Windows.Forms.Button();
-            this.txtaussen = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.NavPanel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -102,7 +101,7 @@ namespace WindowsFormsApp
             this.lblSolarRL.Location = new System.Drawing.Point(711, 260);
             this.lblSolarRL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSolarRL.Name = "lblSolarRL";
-            this.lblSolarRL.Size = new System.Drawing.Size(45, 13);
+            this.lblSolarRL.Size = new System.Drawing.Size(67, 20);
             this.lblSolarRL.TabIndex = 1;
             this.lblSolarRL.Text = "SolarRL";
             // 
@@ -111,7 +110,7 @@ namespace WindowsFormsApp
             this.txtSolarRl.Location = new System.Drawing.Point(655, 366);
             this.txtSolarRl.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtSolarRl.Name = "txtSolarRl";
-            this.txtSolarRl.Size = new System.Drawing.Size(192, 20);
+            this.txtSolarRl.Size = new System.Drawing.Size(192, 26);
             this.txtSolarRl.TabIndex = 2;
             // 
             // btnRefresh
@@ -130,33 +129,31 @@ namespace WindowsFormsApp
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.Controls.Add(this.txtaussen);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox20);
+            this.panel1.Controls.Add(this.txtWW);
             this.panel1.Controls.Add(this.lblWWZulauf);
-            this.panel1.Controls.Add(this.textBox11);
+            this.panel1.Controls.Add(this.txtPSHeiz);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox12);
-            this.panel1.Controls.Add(this.textBox13);
-            this.panel1.Controls.Add(this.textBox14);
-            this.panel1.Controls.Add(this.textBox15);
+            this.panel1.Controls.Add(this.txtPSWW);
+            this.panel1.Controls.Add(this.txtWPInnen);
+            this.panel1.Controls.Add(this.txtSoleVl);
+            this.panel1.Controls.Add(this.txtSoleRl);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.lblwpinnen);
             this.panel1.Controls.Add(this.lblsolev);
             this.panel1.Controls.Add(this.lblSoleRl);
-            this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.lblSoleVl);
-            this.panel1.Controls.Add(this.textBox7);
+            this.panel1.Controls.Add(this.txtKollektor);
             this.panel1.Controls.Add(this.txtsolar);
-            this.panel1.Controls.Add(this.textBox9);
-            this.panel1.Controls.Add(this.textBox10);
+            this.panel1.Controls.Add(this.txtPSOben);
+            this.panel1.Controls.Add(this.txtPSUnten);
             this.panel1.Controls.Add(this.lblKollektor);
             this.panel1.Controls.Add(this.lblsolarR);
             this.panel1.Controls.Add(this.lblPSOben);
             this.panel1.Controls.Add(this.lblPSUnten);
-            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.txtZisterneOben);
             this.panel1.Controls.Add(this.lblZisterneOben);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txtZisterneUnten);
+            this.panel1.Controls.Add(this.txtfbhRL);
+            this.panel1.Controls.Add(this.txtfbhVL);
             this.panel1.Controls.Add(this.txtalm);
             this.panel1.Controls.Add(this.lblZisterneUnten);
             this.panel1.Controls.Add(this.lblfbhrl);
@@ -168,13 +165,33 @@ namespace WindowsFormsApp
             this.panel1.Size = new System.Drawing.Size(1200, 692);
             this.panel1.TabIndex = 4;
             // 
-            // textBox20
+            // txtaussen
             // 
-            this.textBox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox20.Location = new System.Drawing.Point(250, 619);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(100, 30);
-            this.textBox20.TabIndex = 34;
+            this.txtaussen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtaussen.Location = new System.Drawing.Point(1058, 319);
+            this.txtaussen.Name = "txtaussen";
+            this.txtaussen.Size = new System.Drawing.Size(100, 30);
+            this.txtaussen.TabIndex = 36;
+            this.txtaussen.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(1062, 270);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(91, 25);
+            this.label3.TabIndex = 35;
+            this.label3.Text = "Aussen ";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // txtWW
+            // 
+            this.txtWW.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWW.Location = new System.Drawing.Point(250, 619);
+            this.txtWW.Name = "txtWW";
+            this.txtWW.Size = new System.Drawing.Size(100, 30);
+            this.txtWW.TabIndex = 34;
             // 
             // lblWWZulauf
             // 
@@ -186,55 +203,55 @@ namespace WindowsFormsApp
             this.lblWWZulauf.TabIndex = 30;
             this.lblWWZulauf.Text = "WW Zulauf";
             // 
-            // textBox11
+            // txtPSHeiz
             // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(1051, 483);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 30);
-            this.textBox11.TabIndex = 29;
+            this.txtPSHeiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPSHeiz.Location = new System.Drawing.Point(1051, 483);
+            this.txtPSHeiz.Name = "txtPSHeiz";
+            this.txtPSHeiz.Size = new System.Drawing.Size(100, 30);
+            this.txtPSHeiz.TabIndex = 29;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1062, 434);
+            this.label1.Location = new System.Drawing.Point(1053, 434);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 25);
             this.label1.TabIndex = 28;
             this.label1.Text = "Puffer Heiz";
             // 
-            // textBox12
+            // txtPSWW
             // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(857, 483);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 30);
-            this.textBox12.TabIndex = 27;
+            this.txtPSWW.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPSWW.Location = new System.Drawing.Point(857, 483);
+            this.txtPSWW.Name = "txtPSWW";
+            this.txtPSWW.Size = new System.Drawing.Size(100, 30);
+            this.txtPSWW.TabIndex = 27;
             // 
-            // textBox13
+            // txtWPInnen
             // 
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(655, 483);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(100, 30);
-            this.textBox13.TabIndex = 26;
+            this.txtWPInnen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWPInnen.Location = new System.Drawing.Point(655, 483);
+            this.txtWPInnen.Name = "txtWPInnen";
+            this.txtWPInnen.Size = new System.Drawing.Size(100, 30);
+            this.txtWPInnen.TabIndex = 26;
             // 
-            // textBox14
+            // txtSoleVl
             // 
-            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(443, 483);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 30);
-            this.textBox14.TabIndex = 25;
+            this.txtSoleVl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoleVl.Location = new System.Drawing.Point(443, 483);
+            this.txtSoleVl.Name = "txtSoleVl";
+            this.txtSoleVl.Size = new System.Drawing.Size(100, 30);
+            this.txtSoleVl.TabIndex = 25;
             // 
-            // textBox15
+            // txtSoleRl
             // 
-            this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.Location = new System.Drawing.Point(250, 483);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 30);
-            this.textBox15.TabIndex = 24;
+            this.txtSoleRl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoleRl.Location = new System.Drawing.Point(250, 483);
+            this.txtSoleRl.Name = "txtSoleRl";
+            this.txtSoleRl.Size = new System.Drawing.Size(100, 30);
+            this.txtSoleRl.TabIndex = 24;
             // 
             // label2
             // 
@@ -277,31 +294,13 @@ namespace WindowsFormsApp
             this.lblSoleRl.TabIndex = 20;
             this.lblSoleRl.Text = "Sole RL";
             // 
-            // textBox6
+            // txtKollektor
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(1051, 319);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 30);
-            this.textBox6.TabIndex = 19;
-            // 
-            // lblSoleVl
-            // 
-            this.lblSoleVl.AutoSize = true;
-            this.lblSoleVl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoleVl.Location = new System.Drawing.Point(1062, 270);
-            this.lblSoleVl.Name = "lblSoleVl";
-            this.lblSoleVl.Size = new System.Drawing.Size(89, 25);
-            this.lblSoleVl.TabIndex = 18;
-            this.lblSoleVl.Text = "Sole VL";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(857, 319);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 30);
-            this.textBox7.TabIndex = 17;
+            this.txtKollektor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKollektor.Location = new System.Drawing.Point(857, 319);
+            this.txtKollektor.Name = "txtKollektor";
+            this.txtKollektor.Size = new System.Drawing.Size(100, 30);
+            this.txtKollektor.TabIndex = 17;
             // 
             // txtsolar
             // 
@@ -311,21 +310,22 @@ namespace WindowsFormsApp
             this.txtsolar.Size = new System.Drawing.Size(100, 30);
             this.txtsolar.TabIndex = 16;
             // 
-            // textBox9
+            // txtPSOben
             // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(443, 319);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 30);
-            this.textBox9.TabIndex = 15;
+            this.txtPSOben.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPSOben.Location = new System.Drawing.Point(443, 319);
+            this.txtPSOben.Name = "txtPSOben";
+            this.txtPSOben.Size = new System.Drawing.Size(100, 30);
+            this.txtPSOben.TabIndex = 15;
             // 
-            // textBox10
+            // txtPSUnten
             // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(250, 319);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 30);
-            this.textBox10.TabIndex = 14;
+            this.txtPSUnten.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPSUnten.Location = new System.Drawing.Point(250, 319);
+            this.txtPSUnten.Name = "txtPSUnten";
+            this.txtPSUnten.Size = new System.Drawing.Size(100, 30);
+            this.txtPSUnten.TabIndex = 14;
+            this.txtPSUnten.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
             // 
             // lblKollektor
             // 
@@ -368,13 +368,13 @@ namespace WindowsFormsApp
             this.lblPSUnten.TabIndex = 10;
             this.lblPSUnten.Text = "PS Unten";
             // 
-            // textBox5
+            // txtZisterneOben
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(1051, 177);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 30);
-            this.textBox5.TabIndex = 9;
+            this.txtZisterneOben.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtZisterneOben.Location = new System.Drawing.Point(1051, 177);
+            this.txtZisterneOben.Name = "txtZisterneOben";
+            this.txtZisterneOben.Size = new System.Drawing.Size(100, 30);
+            this.txtZisterneOben.TabIndex = 9;
             // 
             // lblZisterneOben
             // 
@@ -387,30 +387,31 @@ namespace WindowsFormsApp
             this.lblZisterneOben.Text = "Zisterne Oben";
             this.lblZisterneOben.Click += new System.EventHandler(this.label1_Click_2);
             // 
-            // textBox4
+            // txtZisterneUnten
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(857, 177);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 30);
-            this.textBox4.TabIndex = 7;
+            this.txtZisterneUnten.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtZisterneUnten.Location = new System.Drawing.Point(857, 177);
+            this.txtZisterneUnten.Name = "txtZisterneUnten";
+            this.txtZisterneUnten.Size = new System.Drawing.Size(100, 30);
+            this.txtZisterneUnten.TabIndex = 7;
             // 
-            // textBox3
+            // txtfbhRL
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(655, 177);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 30);
-            this.textBox3.TabIndex = 6;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txtfbhRL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtfbhRL.Location = new System.Drawing.Point(655, 177);
+            this.txtfbhRL.Name = "txtfbhRL";
+            this.txtfbhRL.Size = new System.Drawing.Size(100, 30);
+            this.txtfbhRL.TabIndex = 6;
+            this.txtfbhRL.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // textBox2
+            // txtfbhVL
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(443, 177);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 30);
-            this.textBox2.TabIndex = 5;
+            this.txtfbhVL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtfbhVL.Location = new System.Drawing.Point(443, 177);
+            this.txtfbhVL.Name = "txtfbhVL";
+            this.txtfbhVL.Size = new System.Drawing.Size(100, 30);
+            this.txtfbhVL.TabIndex = 5;
+            this.txtfbhVL.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtalm
             // 
@@ -467,6 +468,7 @@ namespace WindowsFormsApp
             // NavPanel
             // 
             this.NavPanel.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.NavPanel.Controls.Add(this.dateTimePicker1);
             this.NavPanel.Controls.Add(this.dashlbl);
             this.NavPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.NavPanel.Location = new System.Drawing.Point(206, 0);
@@ -514,9 +516,9 @@ namespace WindowsFormsApp
             this.pictureBox1.BackColor = System.Drawing.Color.Teal;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(126, 9);
+            this.pictureBox1.Location = new System.Drawing.Point(138, 9);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(65, 42);
+            this.pictureBox1.Size = new System.Drawing.Size(53, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -526,7 +528,7 @@ namespace WindowsFormsApp
             this.headLabel.AutoSize = true;
             this.headLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.headLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.headLabel.Location = new System.Drawing.Point(3, 19);
+            this.headLabel.Location = new System.Drawing.Point(9, 9);
             this.headLabel.Name = "headLabel";
             this.headLabel.Size = new System.Drawing.Size(121, 17);
             this.headLabel.TabIndex = 1;
@@ -567,25 +569,13 @@ namespace WindowsFormsApp
             this.ausgangbtn.UseVisualStyleBackColor = false;
             this.ausgangbtn.Click += new System.EventHandler(this.ausgangbtn_Click);
             // 
-            // txtaussen
+            // dateTimePicker1
             // 
-            this.txtaussen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtaussen.Location = new System.Drawing.Point(443, 619);
-            this.txtaussen.Name = "txtaussen";
-            this.txtaussen.Size = new System.Drawing.Size(100, 30);
-            this.txtaussen.TabIndex = 36;
-            this.txtaussen.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(447, 570);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 25);
-            this.label3.TabIndex = 35;
-            this.label3.Text = "Aussen ";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.dateTimePicker1.Location = new System.Drawing.Point(671, 33);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(300, 26);
+            this.dateTimePicker1.TabIndex = 1;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // Form1
             // 
@@ -641,36 +631,35 @@ namespace WindowsFormsApp
         private System.Windows.Forms.Label lbl;
         private System.Windows.Forms.Label lblZisterneUnten;
         private System.Windows.Forms.Label lblfbhrl;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtZisterneUnten;
+        private System.Windows.Forms.TextBox txtfbhRL;
+        private System.Windows.Forms.TextBox txtfbhVL;
         private System.Windows.Forms.TextBox txtalm;
         private System.Windows.Forms.Label lblZisterneOben;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label lblSoleVl;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtZisterneOben;
+        private System.Windows.Forms.TextBox txtKollektor;
         private System.Windows.Forms.TextBox txtsolar;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtPSOben;
+        private System.Windows.Forms.TextBox txtPSUnten;
         private System.Windows.Forms.Label lblKollektor;
         private System.Windows.Forms.Label lblsolarR;
         private System.Windows.Forms.Label lblPSOben;
         private System.Windows.Forms.Label lblPSUnten;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtPSHeiz;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox txtPSWW;
+        private System.Windows.Forms.TextBox txtWPInnen;
+        private System.Windows.Forms.TextBox txtSoleVl;
+        private System.Windows.Forms.TextBox txtSoleRl;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblwpinnen;
         private System.Windows.Forms.Label lblsolev;
         private System.Windows.Forms.Label lblSoleRl;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox txtWW;
         private System.Windows.Forms.Label lblWWZulauf;
         private System.Windows.Forms.TextBox txtaussen;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
 

@@ -65,7 +65,7 @@ namespace ClassLibrary
         }
     }
 
-    public class Fussbodenheizung
+    public class FBH
     {
         public static async Task<JsonModel> LoadFbhVL()
         {
@@ -205,9 +205,9 @@ namespace ClassLibrary
         }
     }
 
-    public class Prozessspeicher
+    public class Pufferspeicher
     {
-        public static async Task<JsonModel> LoadProzOben()
+        public static async Task<JsonModel> LoadPSOben()
         {
             string url = "http://localhost:8087/get/modbus.0.holdingRegisters.40007_PS_oben";
             
@@ -225,7 +225,7 @@ namespace ClassLibrary
             }
         }
 
-        public static async Task<JsonModel> LoadProzUnten()
+        public static async Task<JsonModel> LoadPSUnten()
         {
             string url = "http://localhost:8087/get/modbus.0.holdingRegisters.40006_PS_unten";
             
@@ -237,6 +237,64 @@ namespace ClassLibrary
                     Console.WriteLine(respObject);
                     return respObject;
                 } else
+                {
+                    throw new Exception(response.ReasonPhrase);
+                }
+            }
+        }
+
+
+        public static async Task<JsonModel> LoadPSWW()
+        {
+            string url = "http://localhost:8087/get/modbus.0.holdingRegisters.40011_Puffer_WW";
+
+            using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
+            {
+                if (response.IsSuccessStatusCode)
+                {
+                    JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                    Console.WriteLine(respObject);
+                    return respObject;
+                }
+                else
+                {
+                    throw new Exception(response.ReasonPhrase);
+                }
+            }
+        }
+
+        public static async Task<JsonModel> LoadPSHeiz()
+        {
+            string url = "http://localhost:8087/get/modbus.0.holdingRegisters.40012_Puffer_Heiz";
+
+            using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
+            {
+                if (response.IsSuccessStatusCode)
+                {
+                    JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                    Console.WriteLine(respObject);
+                    return respObject;
+                }
+                else
+                {
+                    throw new Exception(response.ReasonPhrase);
+                }
+            }
+        }
+
+        public static async Task<JsonModel> LoadWWZulauf()
+        {
+            string url = "http://localhost:8087/get/modbus.0.holdingRegisters.40008_WW_Zulauf";
+
+            using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
+            {
+                if (response.IsSuccessStatusCode)
+                {
+                    JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                    Console.WriteLine(respObject);
+                    return respObject;
+                }
+                else
                 {
                     throw new Exception(response.ReasonPhrase);
                 }

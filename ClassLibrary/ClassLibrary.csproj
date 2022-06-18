@@ -62,7 +62,7 @@
     <Compile Include="Models\Eingänge\AussenluftModel.cs" />
     <Compile Include="Models\Eingänge\FBHModel.cs" />
     <Compile Include="Models\JsonModel.cs" />
-    <Compile Include="Models\Eingänge\Pufferspeicher.cs" />
+    <Compile Include="Models\Eingänge\PSModel.cs" />
     <Compile Include="Models\Eingänge\SolarRLModel.cs" />
     <Compile Include="Models\Eingänge\WPModel.cs" />
     <Compile Include="Models\Eingänge\ZisterneModel.cs" />

@@ -2,10 +2,8 @@ namespace ClassLibrary
 {
     public class FBHModel
     {
-        public int nummer { get; }
-        public double vl { get; set; }
-        public double rl { get; set; }
-        public string timestamp { get; set; }
-        public int plcNummer { get; }
+        public double FBH_VL { get; set; }
+        public double FBH_VR { get; set; }
+        public string date { get; set; }
     }
 }

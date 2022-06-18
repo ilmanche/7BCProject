@@ -2,10 +2,8 @@ namespace ClassLibrary
 {
     public  class ZisterneModel
     {
-        public int nummer { get; }
-        public double unten { get; set; }
-        public double oben { get; set; }
-        public string timestamp { get; set; }
-        public int plcNummer { get; }
+        public double Zist_unten { get; set; }
+        public double Zist_oben { get; set; }
+        public string date { get; set; }
     }
 }

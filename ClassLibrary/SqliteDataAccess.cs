@@ -1,4 +1,5 @@
-﻿using Dapper;
+﻿using ClassLibrary.Models.Ausgänge;
+using Dapper;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -72,6 +73,16 @@ namespace ClassLibrary
 
         }
 
+        public static List<AusgaengeModel> LoadAusgang()
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var output = cnn.Query<AusgaengeModel>("select * from Ausgaenge", new DynamicParameters());
+                return output.ToList();
+            }
+
+        }
+
 
 
         public static void SaveSolarPanel(SolarRLModel solarRl)
@@ -120,6 +131,15 @@ namespace ClassLibrary
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
             {
                 cnn.Execute("insert into Pufferspeicher (ps_oben, ps_unten,PS_WW,PS_Heiz, PS_WW_Zulauf, date) values (@ps_oben, @ps_unten,@PS_WW, @PS_Heiz, @PS_WW_Zulauf, @date)", ps);
+            }
+        }
+
+
+        public static void SaveAusgang(AusgaengeModel ausgaenge)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                cnn.Execute("insert into Ausgaenge (Heizband_ALM, Pumpe_Solar,Pumpe_Zirku,Ventil_Solar1, Ventil_Solar2, Ventil_WW, Pumpe_Hzkr,Ventil_Sole1,Ventil_Sole2,Wp_Anf, Pumpe_Sole, Mischer_Auf,Mischer_Zu, date    ) values (@Heizband_ALM, @Pumpe_Solar,@Pumpe_Zirku,@Ventil_Solar1, @Ventil_Solar2, @Ventil_WW, @Pumpe_Hzkr,@Ventil_Sole1,@Ventil_Sole2,@Wp_Anf, @Pumpe_Sole, @Mischer_Auf,@Mischer_Zu, date)", ausgaenge);
             }
         }
 

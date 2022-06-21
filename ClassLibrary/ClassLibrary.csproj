@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="ApiHelper\ApiHelper.cs" />
     <Compile Include="Main.cs" />
+    <Compile Include="Models\Ausgänge\AusgaengeModel.cs" />
     <Compile Include="Models\Eingänge\AussenluftModel.cs" />
     <Compile Include="Models\Eingänge\FBHModel.cs" />
     <Compile Include="Models\JsonModel.cs" />
@@ -73,9 +74,7 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\Ausgänge\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.116.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.116.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

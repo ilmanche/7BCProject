@@ -567,7 +567,7 @@ namespace WindowsFormsApp
             this.ausgangbtn.TabIndex = 1;
             this.ausgangbtn.Text = "Ausgänge";
             this.ausgangbtn.UseVisualStyleBackColor = false;
-            this.ausgangbtn.Click += new System.EventHandler(this.ausgangbtn_Click);
+          //  this.ausgangbtn.Click += new System.EventHandler(this.ausgangbtn_ClickAsync);
             // 
             // dateTimePicker1
             // 
@@ -575,7 +575,7 @@ namespace WindowsFormsApp
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(300, 26);
             this.dateTimePicker1.TabIndex = 1;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+           // this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChangedAsync);
             // 
             // Form1
             // 

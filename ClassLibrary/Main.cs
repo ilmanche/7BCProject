@@ -210,7 +210,7 @@ namespace ClassLibrary
         public static async Task<JsonModel> LoadPSOben()
         {
             string url = "http://localhost:8087/get/modbus.0.holdingRegisters.40007_PS_oben";
-            
+
             using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
             {
                 if (response.IsSuccessStatusCode)
@@ -228,7 +228,7 @@ namespace ClassLibrary
         public static async Task<JsonModel> LoadPSUnten()
         {
             string url = "http://localhost:8087/get/modbus.0.holdingRegisters.40006_PS_unten";
-            
+
             using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
             {
                 if (response.IsSuccessStatusCode)
@@ -301,4 +301,275 @@ namespace ClassLibrary
             }
         }
     }
-}
+        ///////////////////////////////////Ausgang
+        ///
+        public class Ausgaenge
+        {
+            public static async Task<JsonModel> LoadPumpeSolar()
+            {
+                string url = "http://localhost:8087/get/modbus.0.coils.2_Pumpe_Solar";
+
+                using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                        Console.WriteLine(respObject);
+                        return respObject;
+                    }
+                    else
+                    {
+                        throw new Exception(response.ReasonPhrase);
+                    }
+                }
+            }
+
+            public static async Task<JsonModel> LoadPumpeZirku()
+            {
+                string url = "http://localhost:8087/get/modbus.0.coils.3_Pumpe_Zirku";
+
+                using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                        Console.WriteLine(respObject);
+                        return respObject;
+                    }
+                    else
+                    {
+                        throw new Exception(response.ReasonPhrase);
+                    }
+                }
+            }
+
+
+            public static async Task<JsonModel> LoadVentilSole1()
+            {
+                string url = "http://localhost:8087/get/modbus.0.coils.4_Ventil_Sole1";
+
+                using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                        Console.WriteLine(respObject);
+                        return respObject;
+                    }
+                    else
+                    {
+                        throw new Exception(response.ReasonPhrase);
+                    }
+                }
+            }
+
+            public static async Task<JsonModel> LoadVentilSolar1()
+            {
+                string url = "http://localhost:8087/get/modbus.0.coils.5_Ventil_Solar1";
+
+                using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                        Console.WriteLine(respObject);
+                        return respObject;
+                    }
+                    else
+                    {
+                        throw new Exception(response.ReasonPhrase);
+                    }
+                }
+            }
+
+            public static async Task<JsonModel> LoadHeizbandALM()
+            {
+                string url = "http://localhost:8087/get/modbus.0.coils.6_Heizband_ALM";
+
+                using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                        Console.WriteLine(respObject);
+                        return respObject;
+                    }
+                    else
+                    {
+                        throw new Exception(response.ReasonPhrase);
+                    }
+                }
+            }
+
+            public static async Task<JsonModel> LoadPumpeSole()
+            {
+                string url = "http://localhost:8087/get/modbus.0.coils.7_Pumpe_Sole";
+
+                using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                        Console.WriteLine(respObject);
+                        return respObject;
+                    }
+                    else
+                    {
+                        throw new Exception(response.ReasonPhrase);
+                    }
+                }
+            }
+
+            public static async Task<JsonModel> LoadVentilWW()
+            {
+                string url = "http://localhost:8087/get/modbus.0.coils.8_Ventil_WW";
+
+                using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                        Console.WriteLine(respObject);
+                        return respObject;
+                    }
+                    else
+                    {
+                        throw new Exception(response.ReasonPhrase);
+                    }
+                }
+            }
+
+            public static async Task<JsonModel> LoadPumpeHzkr()
+            {
+                string url = "http://localhost:8087/get/modbus.0.coils.9_Pumpe_Hzkr";
+
+                using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                        Console.WriteLine(respObject);
+                        return respObject;
+                    }
+                    else
+                    {
+                        throw new Exception(response.ReasonPhrase);
+                    }
+                }
+            }
+
+            public static async Task<JsonModel> LoadWPAnf()
+            {
+                string url = "http://localhost:8087/get/modbus.0.coils.10_WP_Anf";
+
+                using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                        Console.WriteLine(respObject);
+                        return respObject;
+                    }
+                    else
+                    {
+                        throw new Exception(response.ReasonPhrase);
+                    }
+                }
+            }
+
+            public static async Task<JsonModel> LoadMischerAuf()
+            {
+                string url = "http://localhost:8087/get/modbus.0.coils.11_Mischer_auf";
+
+                using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                        Console.WriteLine(respObject);
+                        return respObject;
+                    }
+                    else
+                    {
+                        throw new Exception(response.ReasonPhrase);
+                    }
+                }
+            }
+
+            public static async Task<JsonModel> LoadMischerZu()
+            {
+                string url = "http://localhost:8087/get/modbus.0.coils.12_Mischer_zu";
+
+                using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                        Console.WriteLine(respObject);
+                        return respObject;
+                    }
+                    else
+                    {
+                        throw new Exception(response.ReasonPhrase);
+                    }
+                }
+            }
+
+            public static async Task<JsonModel> LoadVentilSole2()
+            {
+                string url = "http://localhost:8087/get/modbus.0.coils.13_Ventil_Sole2";
+
+                using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                        Console.WriteLine(respObject);
+                        return respObject;
+                    }
+                    else
+                    {
+                        throw new Exception(response.ReasonPhrase);
+                    }
+                }
+            }
+
+            public static async Task<JsonModel> LoadVentilSolar2()
+            {
+                string url = "http://localhost:8087/get/modbus.0.coils.14_Ventil_Solar2";
+
+                using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                        Console.WriteLine(respObject);
+                        return respObject;
+                    }
+                    else
+                    {
+                        throw new Exception(response.ReasonPhrase);
+                    }
+                }
+            }
+
+        public static async Task<JsonModel> LoadVentilSolar2()
+        {
+            string url = "http://localhost:8087/set/modbus.0.coils.14_Ventil_Solar2";
+
+            using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
+            {
+                if (response.IsSuccessStatusCode)
+                {
+                    JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                    Console.WriteLine(respObject);
+                    return respObject;
+                }
+                else
+                {
+                    throw new Exception(response.ReasonPhrase);
+                }
+            }
+        }
+    }
+        }

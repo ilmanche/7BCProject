@@ -9,6 +9,12 @@ namespace ClassLibrary
         public double PS_WW { get; set; }
         public double PS_Heiz { get; set; }
         public double PS_WW_Zulauf { get; set; }
+     
+
+
+
+
+
 
 
 

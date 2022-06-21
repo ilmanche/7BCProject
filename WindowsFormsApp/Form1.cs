@@ -1,14 +1,9 @@
-﻿using System;
+﻿using ClassLibrary;
+using ClassLibrary.Models.Ausgänge;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ClassLibrary;
-using ClassLibrary.Models.Ausgänge;
 
 namespace WindowsFormsApp
 {
@@ -32,6 +27,19 @@ namespace WindowsFormsApp
             InitializeComponent();
             ApiHelper.InitializeClient();
             LoadTemp();
+        }
+
+        public void loadform(object Form)
+        {
+            if (this.mainpanel.Controls.Count > 0)
+                this.mainpanel.Controls.RemoveAt(0);
+            Form f = Form as Form;
+            f.TopLevel = false;
+            f.Dock = DockStyle.Fill;
+            this.mainpanel.Controls.Add(f);
+            this.mainpanel.Tag = f;
+            f.Show();
+
         }
         private void LoadTemp()
         {
@@ -71,7 +79,7 @@ namespace WindowsFormsApp
             var Pumpe_Solar = await Ausgaenge.LoadPumpeSolar();
             var Pumpe_Zirku = await Ausgaenge.LoadPumpeZirku();
             var Ventil_Sole1 = await Ausgaenge.LoadVentilSole1();
-            var Ventil_Solar1  = await Ausgaenge.LoadVentilSolar1();
+            var Ventil_Solar1 = await Ausgaenge.LoadVentilSolar1();
             var Heizband_ALM = await Ausgaenge.LoadHeizbandALM();
             var Pumpe_Sole = await Ausgaenge.LoadPumpeSole();
             var Ventil_WW = await Ausgaenge.LoadVentilWW();
@@ -79,7 +87,7 @@ namespace WindowsFormsApp
             var Mischer_Auf = await Ausgaenge.LoadMischerAuf();
             var Mischer_Zu = await Ausgaenge.LoadMischerZu();
             var Ventil_Sole2 = await Ausgaenge.LoadVentilSole2();
-            var Ventil_Solar2 = await Ausgaenge.LoadVentilSolar2();
+            // var Ventil_Solar2 = await Ausgaenge.LoadVentilSolar2();
             var Wp_Anf = await Ausgaenge.LoadWPAnf();
 
 
@@ -87,14 +95,14 @@ namespace WindowsFormsApp
             ausgaenge.date = DateTime.Now.ToString();
             ausgaenge.Heizband_ALM = Heizband_ALM.state;
             ausgaenge.Mischer_Auf = Mischer_Auf.state;
-            ausgaenge.Mischer_Zu = Mischer_Zu.state;    
-            ausgaenge.Pumpe_Hzkr = Pumpe_Hzkr.state;    
+            ausgaenge.Mischer_Zu = Mischer_Zu.state;
+            ausgaenge.Pumpe_Hzkr = Pumpe_Hzkr.state;
             ausgaenge.Pumpe_Solar = Pumpe_Solar.state;
-            ausgaenge.Pumpe_Sole = Pumpe_Sole.state;    
+            ausgaenge.Pumpe_Sole = Pumpe_Sole.state;
             ausgaenge.Pumpe_Zirku = Pumpe_Zirku.state;
-            ausgaenge.Ventil_Solar1 = Ventil_Solar1.state;  
-            ausgaenge.Ventil_Solar2 = Ventil_Solar2.state;
-            ausgaenge.Ventil_Sole1 = Ventil_Sole1.state;    
+            ausgaenge.Ventil_Solar1 = Ventil_Solar1.state;
+            // ausgaenge.Ventil_Solar2 = Ventil_Solar2.state;
+            ausgaenge.Ventil_Sole1 = Ventil_Sole1.state;
             ausgaenge.Ventil_Sole2 = Ventil_Sole2.state;
             ausgaenge.Ventil_WW = Ventil_WW.state;
             ausgaenge.Wp_Anf = Wp_Anf.state;
@@ -139,27 +147,27 @@ namespace WindowsFormsApp
 
         private async void eingangbtn_Click(object sender, EventArgs e)
         {
+            loadform(new Eingang());
 
-           
-           var solardata = await SolarPanel.LoadSolarPanelData();
-           var kollektor = await SolarPanel.LoadSolarPanelData();
+            var solardata = await SolarPanel.LoadSolarPanelData();
+            var kollektor = await SolarPanel.LoadSolarPanelData();
 
-           var aussenluftdata1 = await Aussenluft.LoadAlmAussen();
-           var aussenluftdata2 = await Aussenluft.LoadTempAussen();
-           var fbhdata1 = await FBH.LoadFbhRL();
-           var fbhdata2 = await FBH.LoadFbhVL();
+            var aussenluftdata1 = await Aussenluft.LoadAlmAussen();
+            var aussenluftdata2 = await Aussenluft.LoadTempAussen();
+            var fbhdata1 = await FBH.LoadFbhRL();
+            var fbhdata2 = await FBH.LoadFbhVL();
 
-           var psobendata= await Pufferspeicher.LoadPSOben();
-           var psuntendata = await Pufferspeicher.LoadPSUnten();
-           var psww = await Pufferspeicher.LoadPSWW();
-           var psheiz = await Pufferspeicher.LoadPSHeiz();
-           var wwzulauf = await Pufferspeicher.LoadWWZulauf();
-
+            var psobendata = await Pufferspeicher.LoadPSOben();
+            var psuntendata = await Pufferspeicher.LoadPSUnten();
+            var psww = await Pufferspeicher.LoadPSWW();
+            var psheiz = await Pufferspeicher.LoadPSHeiz();
+            var wwzulauf = await Pufferspeicher.LoadWWZulauf();
 
 
-           var wp_sole_rl = await Waermepumpe.LoadSoleRL();
-           var wp_sole_vl = await Waermepumpe.LoadSoleVL();
-           var wp_innen = await Waermepumpe.LoadWPinnen();
+
+            var wp_sole_rl = await Waermepumpe.LoadSoleRL();
+            var wp_sole_vl = await Waermepumpe.LoadSoleVL();
+            var wp_innen = await Waermepumpe.LoadWPinnen();
 
 
 
@@ -191,12 +199,12 @@ namespace WindowsFormsApp
             SqliteDataAccess.SaveAußenluft(alm);
 
 
-             FBHModel fbh = new FBHModel();
-             fbh.FBH_VR = fbhdata1.val;
-             fbh.FBH_VL = fbhdata2.val;
-             fbh.date = DateTime.Now.ToString();
-             fussboden.Add(fbh);
-             SqliteDataAccess.SaveFBH(fbh);
+            FBHModel fbh = new FBHModel();
+            fbh.FBH_VR = fbhdata1.val;
+            fbh.FBH_VL = fbhdata2.val;
+            fbh.date = DateTime.Now.ToString();
+            fussboden.Add(fbh);
+            SqliteDataAccess.SaveFBH(fbh);
 
 
             PSModel ps = new PSModel();
@@ -208,7 +216,7 @@ namespace WindowsFormsApp
             ps.date = DateTime.Now.ToString();
             pufferspeicher.Add(ps);
             SqliteDataAccess.SavePS(ps);
-          
+
             WPModel wp = new WPModel();
             wp.Sole_rl = wp_sole_rl.val;
             wp.Sole_vl = wp_sole_vl.val;
@@ -225,22 +233,22 @@ namespace WindowsFormsApp
             SqliteDataAccess.SaveZisterne(zz);
 
 
-            txtsolar.Text = sol.Temperatur.ToString() + "°C";
-            txtKollektor.Text = sol.Kollektor.ToString() + "°C";
-            txtaussen.Text = alm.aussen_temperatur.ToString() + "°C";
-            txtalm.Text = alm.alm_aussen_temperatur.ToString() + "°C";
-            txtfbhVL.Text = fbh.FBH_VL.ToString() + "°C";
-            txtfbhRL.Text = fbh.FBH_VR.ToString() + "°C";
-            txtPSOben.Text = ps.PS_oben.ToString() + "°C";
-            txtPSUnten.Text = ps.PS_unten.ToString() + "°C";
-            txtPSHeiz.Text = ps.PS_Heiz.ToString() + "°C";
-            txtPSWW.Text = ps.PS_WW.ToString() + "°C";
-            txtWW.Text = ps.PS_WW_Zulauf.ToString() + "°C";
-            txtSoleRl.Text = wp.Sole_rl.ToString() + "°C";
-            txtSoleVl.Text = wp.Sole_vl.ToString() + "°C";
-            txtWPInnen.Text  = wp.Wp_innen.ToString() + "°C";   
-            txtZisterneOben.Text = zz.Zist_oben.ToString() + "°C";
-            txtZisterneUnten.Text = zz.Zist_unten.ToString() + "°C";
+            //txtsolar.Text = sol.Temperatur.ToString() + "°C";
+            //txtKollektor.Text = sol.Kollektor.ToString() + "°C";
+            //txtaussen.Text = alm.aussen_temperatur.ToString() + "°C";
+            //txtalm.Text = alm.alm_aussen_temperatur.ToString() + "°C";
+            //txtfbhVL.Text = fbh.FBH_VL.ToString() + "°C";
+            //txtfbhRL.Text = fbh.FBH_VR.ToString() + "°C";
+            //txtPSOben.Text = ps.PS_oben.ToString() + "°C";
+            //txtPSUnten.Text = ps.PS_unten.ToString() + "°C";
+            //txtPSHeiz.Text = ps.PS_Heiz.ToString() + "°C";
+            //txtPSWW.Text = ps.PS_WW.ToString() + "°C";
+            //txtWW.Text = ps.PS_WW_Zulauf.ToString() + "°C";
+            //txtSoleRl.Text = wp.Sole_rl.ToString() + "°C";
+            //txtSoleVl.Text = wp.Sole_vl.ToString() + "°C";
+            //txtWPInnen.Text = wp.Wp_innen.ToString() + "°C";
+            //txtZisterneOben.Text = zz.Zist_oben.ToString() + "°C";
+            //txtZisterneUnten.Text = zz.Zist_unten.ToString() + "°C";
 
 
 
@@ -268,6 +276,16 @@ namespace WindowsFormsApp
 
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void ausgangbtn_Click(object sender, EventArgs e)
+        {
+            loadform(new Ausgang());
+        }
+
         //private async Task dateTimePicker1_ValueChangedAsync(object sender, EventArgs e)
         //{
 
@@ -279,7 +297,7 @@ namespace WindowsFormsApp
         //        return d.date == dateTimePicker1.Value.ToString();
         //    }).ToList();
 
-            
+
         //    ZisterneModel zz = new ZisterneModel();
         //    zz.Zist_unten = zisterne.Select(d => d.Zist_unten).First();
         //    zz.Zist_unten = zisterne.Select(d => d.Zist_oben).First();

@@ -553,23 +553,23 @@ namespace ClassLibrary
                 }
             }
 
-        public static async Task<JsonModel> LoadVentilSolar2()
-        {
-            string url = "http://localhost:8087/set/modbus.0.coils.14_Ventil_Solar2";
+        //public static async Task<JsonModel> LoadVentilSolar2()
+        //{
+        //    string url = "http://localhost:8087/set/modbus.0.coils.14_Ventil_Solar2";
 
-            using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
-            {
-                if (response.IsSuccessStatusCode)
-                {
-                    JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
-                    Console.WriteLine(respObject);
-                    return respObject;
-                }
-                else
-                {
-                    throw new Exception(response.ReasonPhrase);
-                }
-            }
-        }
+        //    using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
+        //    {
+        //        if (response.IsSuccessStatusCode)
+        //        {
+        //            JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+        //            Console.WriteLine(respObject);
+        //            return respObject;
+        //        }
+        //        else
+        //        {
+        //            throw new Exception(response.ReasonPhrase);
+        //        }
+        //    }
+        //}
     }
         }

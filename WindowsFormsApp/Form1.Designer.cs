@@ -551,7 +551,7 @@ namespace WindowsFormsApp
             this.eingangbtn.TabIndex = 0;
             this.eingangbtn.Text = "Eingänge";
             this.eingangbtn.UseVisualStyleBackColor = false;
-            this.eingangbtn.Click += new System.EventHandler(this.eingangbtn_Click);
+            this.eingangbtn.Click += new System.EventHandler(this.eingangbtn_Click_1);
             // 
             // ausgangbtn
             // 
@@ -567,7 +567,6 @@ namespace WindowsFormsApp
             this.ausgangbtn.TabIndex = 1;
             this.ausgangbtn.Text = "Ausgänge";
             this.ausgangbtn.UseVisualStyleBackColor = false;
-          //  this.ausgangbtn.Click += new System.EventHandler(this.ausgangbtn_ClickAsync);
             // 
             // dateTimePicker1
             // 

@@ -59,12 +59,14 @@
             this.lblfbhvl = new System.Windows.Forms.Label();
             this.lbl = new System.Windows.Forms.Label();
             this.btnStart = new System.Windows.Forms.Button();
+            this.txtwwZulauf = new System.Windows.Forms.TextBox();
+            this.lblZulauf = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtaussen
             // 
             this.txtaussen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtaussen.Location = new System.Drawing.Point(928, 336);
+            this.txtaussen.Location = new System.Drawing.Point(1066, 335);
             this.txtaussen.Name = "txtaussen";
             this.txtaussen.Size = new System.Drawing.Size(100, 30);
             this.txtaussen.TabIndex = 66;
@@ -73,7 +75,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(932, 287);
+            this.label3.Location = new System.Drawing.Point(1070, 286);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(91, 25);
             this.label3.TabIndex = 65;
@@ -82,7 +84,7 @@
             // txtPSHeiz
             // 
             this.txtPSHeiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPSHeiz.Location = new System.Drawing.Point(921, 500);
+            this.txtPSHeiz.Location = new System.Drawing.Point(1059, 499);
             this.txtPSHeiz.Name = "txtPSHeiz";
             this.txtPSHeiz.Size = new System.Drawing.Size(100, 30);
             this.txtPSHeiz.TabIndex = 64;
@@ -91,7 +93,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(923, 451);
+            this.label1.Location = new System.Drawing.Point(1061, 450);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 25);
             this.label1.TabIndex = 63;
@@ -100,7 +102,7 @@
             // txtPSWW
             // 
             this.txtPSWW.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPSWW.Location = new System.Drawing.Point(727, 500);
+            this.txtPSWW.Location = new System.Drawing.Point(865, 499);
             this.txtPSWW.Name = "txtPSWW";
             this.txtPSWW.Size = new System.Drawing.Size(100, 30);
             this.txtPSWW.TabIndex = 62;
@@ -108,7 +110,7 @@
             // txtWPInnen
             // 
             this.txtWPInnen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWPInnen.Location = new System.Drawing.Point(525, 500);
+            this.txtWPInnen.Location = new System.Drawing.Point(663, 499);
             this.txtWPInnen.Name = "txtWPInnen";
             this.txtWPInnen.Size = new System.Drawing.Size(100, 30);
             this.txtWPInnen.TabIndex = 61;
@@ -116,7 +118,7 @@
             // txtSoleVl
             // 
             this.txtSoleVl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoleVl.Location = new System.Drawing.Point(313, 500);
+            this.txtSoleVl.Location = new System.Drawing.Point(451, 499);
             this.txtSoleVl.Name = "txtSoleVl";
             this.txtSoleVl.Size = new System.Drawing.Size(100, 30);
             this.txtSoleVl.TabIndex = 60;
@@ -124,7 +126,7 @@
             // txtSoleRl
             // 
             this.txtSoleRl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoleRl.Location = new System.Drawing.Point(120, 500);
+            this.txtSoleRl.Location = new System.Drawing.Point(258, 499);
             this.txtSoleRl.Name = "txtSoleRl";
             this.txtSoleRl.Size = new System.Drawing.Size(100, 30);
             this.txtSoleRl.TabIndex = 59;
@@ -133,7 +135,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(730, 451);
+            this.label2.Location = new System.Drawing.Point(868, 450);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(117, 25);
             this.label2.TabIndex = 58;
@@ -143,7 +145,7 @@
             // 
             this.lblwpinnen.AutoSize = true;
             this.lblwpinnen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblwpinnen.Location = new System.Drawing.Point(529, 454);
+            this.lblwpinnen.Location = new System.Drawing.Point(667, 453);
             this.lblwpinnen.Name = "lblwpinnen";
             this.lblwpinnen.Size = new System.Drawing.Size(107, 25);
             this.lblwpinnen.TabIndex = 57;
@@ -154,7 +156,7 @@
             // 
             this.lblsolev.AutoSize = true;
             this.lblsolev.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsolev.Location = new System.Drawing.Point(317, 454);
+            this.lblsolev.Location = new System.Drawing.Point(455, 453);
             this.lblsolev.Name = "lblsolev";
             this.lblsolev.Size = new System.Drawing.Size(89, 25);
             this.lblsolev.TabIndex = 56;
@@ -164,7 +166,7 @@
             // 
             this.lblSoleRl.AutoSize = true;
             this.lblSoleRl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoleRl.Location = new System.Drawing.Point(115, 451);
+            this.lblSoleRl.Location = new System.Drawing.Point(253, 450);
             this.lblSoleRl.Name = "lblSoleRl";
             this.lblSoleRl.Size = new System.Drawing.Size(88, 25);
             this.lblSoleRl.TabIndex = 55;
@@ -173,7 +175,7 @@
             // txtKollektor
             // 
             this.txtKollektor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKollektor.Location = new System.Drawing.Point(727, 336);
+            this.txtKollektor.Location = new System.Drawing.Point(865, 335);
             this.txtKollektor.Name = "txtKollektor";
             this.txtKollektor.Size = new System.Drawing.Size(100, 30);
             this.txtKollektor.TabIndex = 54;
@@ -181,7 +183,7 @@
             // txtsolar
             // 
             this.txtsolar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsolar.Location = new System.Drawing.Point(525, 336);
+            this.txtsolar.Location = new System.Drawing.Point(663, 335);
             this.txtsolar.Name = "txtsolar";
             this.txtsolar.Size = new System.Drawing.Size(100, 30);
             this.txtsolar.TabIndex = 53;
@@ -189,7 +191,7 @@
             // txtPSOben
             // 
             this.txtPSOben.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPSOben.Location = new System.Drawing.Point(313, 336);
+            this.txtPSOben.Location = new System.Drawing.Point(451, 335);
             this.txtPSOben.Name = "txtPSOben";
             this.txtPSOben.Size = new System.Drawing.Size(100, 30);
             this.txtPSOben.TabIndex = 52;
@@ -197,7 +199,7 @@
             // txtPSUnten
             // 
             this.txtPSUnten.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPSUnten.Location = new System.Drawing.Point(120, 336);
+            this.txtPSUnten.Location = new System.Drawing.Point(258, 335);
             this.txtPSUnten.Name = "txtPSUnten";
             this.txtPSUnten.Size = new System.Drawing.Size(100, 30);
             this.txtPSUnten.TabIndex = 51;
@@ -206,7 +208,7 @@
             // 
             this.lblKollektor.AutoSize = true;
             this.lblKollektor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKollektor.Location = new System.Drawing.Point(730, 287);
+            this.lblKollektor.Location = new System.Drawing.Point(868, 286);
             this.lblKollektor.Name = "lblKollektor";
             this.lblKollektor.Size = new System.Drawing.Size(97, 25);
             this.lblKollektor.TabIndex = 50;
@@ -216,7 +218,7 @@
             // 
             this.lblsolarR.AutoSize = true;
             this.lblsolarR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsolarR.Location = new System.Drawing.Point(529, 290);
+            this.lblsolarR.Location = new System.Drawing.Point(667, 289);
             this.lblsolarR.Name = "lblsolarR";
             this.lblsolarR.Size = new System.Drawing.Size(95, 25);
             this.lblsolarR.TabIndex = 49;
@@ -227,7 +229,7 @@
             // 
             this.lblPSOben.AutoSize = true;
             this.lblPSOben.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPSOben.Location = new System.Drawing.Point(317, 290);
+            this.lblPSOben.Location = new System.Drawing.Point(455, 289);
             this.lblPSOben.Name = "lblPSOben";
             this.lblPSOben.Size = new System.Drawing.Size(100, 25);
             this.lblPSOben.TabIndex = 48;
@@ -237,7 +239,7 @@
             // 
             this.lblPSUnten.AutoSize = true;
             this.lblPSUnten.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPSUnten.Location = new System.Drawing.Point(115, 287);
+            this.lblPSUnten.Location = new System.Drawing.Point(253, 286);
             this.lblPSUnten.Name = "lblPSUnten";
             this.lblPSUnten.Size = new System.Drawing.Size(104, 25);
             this.lblPSUnten.TabIndex = 47;
@@ -246,7 +248,7 @@
             // txtZisterneOben
             // 
             this.txtZisterneOben.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtZisterneOben.Location = new System.Drawing.Point(921, 194);
+            this.txtZisterneOben.Location = new System.Drawing.Point(1059, 193);
             this.txtZisterneOben.Name = "txtZisterneOben";
             this.txtZisterneOben.Size = new System.Drawing.Size(100, 30);
             this.txtZisterneOben.TabIndex = 46;
@@ -255,7 +257,7 @@
             // 
             this.lblZisterneOben.AutoSize = true;
             this.lblZisterneOben.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblZisterneOben.Location = new System.Drawing.Point(896, 145);
+            this.lblZisterneOben.Location = new System.Drawing.Point(1034, 144);
             this.lblZisterneOben.Name = "lblZisterneOben";
             this.lblZisterneOben.Size = new System.Drawing.Size(149, 25);
             this.lblZisterneOben.TabIndex = 45;
@@ -264,7 +266,7 @@
             // txtZisterneUnten
             // 
             this.txtZisterneUnten.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtZisterneUnten.Location = new System.Drawing.Point(727, 194);
+            this.txtZisterneUnten.Location = new System.Drawing.Point(865, 193);
             this.txtZisterneUnten.Name = "txtZisterneUnten";
             this.txtZisterneUnten.Size = new System.Drawing.Size(100, 30);
             this.txtZisterneUnten.TabIndex = 44;
@@ -272,7 +274,7 @@
             // txtfbhRL
             // 
             this.txtfbhRL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfbhRL.Location = new System.Drawing.Point(525, 194);
+            this.txtfbhRL.Location = new System.Drawing.Point(663, 193);
             this.txtfbhRL.Name = "txtfbhRL";
             this.txtfbhRL.Size = new System.Drawing.Size(100, 30);
             this.txtfbhRL.TabIndex = 43;
@@ -280,7 +282,7 @@
             // txtfbhVL
             // 
             this.txtfbhVL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfbhVL.Location = new System.Drawing.Point(313, 194);
+            this.txtfbhVL.Location = new System.Drawing.Point(451, 193);
             this.txtfbhVL.Name = "txtfbhVL";
             this.txtfbhVL.Size = new System.Drawing.Size(100, 30);
             this.txtfbhVL.TabIndex = 42;
@@ -288,7 +290,7 @@
             // txtalm
             // 
             this.txtalm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtalm.Location = new System.Drawing.Point(120, 194);
+            this.txtalm.Location = new System.Drawing.Point(258, 193);
             this.txtalm.Name = "txtalm";
             this.txtalm.Size = new System.Drawing.Size(100, 30);
             this.txtalm.TabIndex = 41;
@@ -298,7 +300,7 @@
             // 
             this.lblZisterneUnten.AutoSize = true;
             this.lblZisterneUnten.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblZisterneUnten.Location = new System.Drawing.Point(711, 145);
+            this.lblZisterneUnten.Location = new System.Drawing.Point(849, 144);
             this.lblZisterneUnten.Name = "lblZisterneUnten";
             this.lblZisterneUnten.Size = new System.Drawing.Size(153, 25);
             this.lblZisterneUnten.TabIndex = 40;
@@ -308,7 +310,7 @@
             // 
             this.lblfbhrl.AutoSize = true;
             this.lblfbhrl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblfbhrl.Location = new System.Drawing.Point(529, 148);
+            this.lblfbhrl.Location = new System.Drawing.Point(667, 147);
             this.lblfbhrl.Name = "lblfbhrl";
             this.lblfbhrl.Size = new System.Drawing.Size(86, 25);
             this.lblfbhrl.TabIndex = 39;
@@ -318,7 +320,7 @@
             // 
             this.lblfbhvl.AutoSize = true;
             this.lblfbhvl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblfbhvl.Location = new System.Drawing.Point(317, 148);
+            this.lblfbhvl.Location = new System.Drawing.Point(455, 147);
             this.lblfbhvl.Name = "lblfbhvl";
             this.lblfbhvl.Size = new System.Drawing.Size(87, 25);
             this.lblfbhvl.TabIndex = 38;
@@ -328,7 +330,7 @@
             // 
             this.lbl.AutoSize = true;
             this.lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl.Location = new System.Drawing.Point(102, 145);
+            this.lbl.Location = new System.Drawing.Point(240, 144);
             this.lbl.Name = "lbl";
             this.lbl.Size = new System.Drawing.Size(136, 25);
             this.lbl.TabIndex = 37;
@@ -336,7 +338,7 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(107, 60);
+            this.btnStart.Location = new System.Drawing.Point(245, 59);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(158, 44);
             this.btnStart.TabIndex = 67;
@@ -344,12 +346,32 @@
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
+            // txtwwZulauf
+            // 
+            this.txtwwZulauf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtwwZulauf.Location = new System.Drawing.Point(258, 610);
+            this.txtwwZulauf.Name = "txtwwZulauf";
+            this.txtwwZulauf.Size = new System.Drawing.Size(100, 30);
+            this.txtwwZulauf.TabIndex = 69;
+            // 
+            // lblZulauf
+            // 
+            this.lblZulauf.AutoSize = true;
+            this.lblZulauf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblZulauf.Location = new System.Drawing.Point(253, 562);
+            this.lblZulauf.Name = "lblZulauf";
+            this.lblZulauf.Size = new System.Drawing.Size(180, 38);
+            this.lblZulauf.TabIndex = 68;
+            this.lblZulauf.Text = "WW Zulauf";
+            // 
             // Eingang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1203, 583);
+            this.ClientSize = new System.Drawing.Size(869, 434);
+            this.Controls.Add(this.txtwwZulauf);
+            this.Controls.Add(this.lblZulauf);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.txtaussen);
             this.Controls.Add(this.label3);
@@ -421,5 +443,7 @@
         private System.Windows.Forms.Label lblfbhvl;
         private System.Windows.Forms.Label lbl;
         private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.TextBox txtwwZulauf;
+        private System.Windows.Forms.Label lblZulauf;
     }
 }

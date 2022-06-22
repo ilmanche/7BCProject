@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassLibrary.Models.Ausgänge;
+using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -31,7 +32,7 @@ namespace ClassLibrary
         public static async Task<JsonModel> LoadAlmAussen()
         {
             string url = "http://localhost:8087/get/modbus.0.holdingRegisters.40009_ALM_aussen";
-            
+
             using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
             {
                 if (response.IsSuccessStatusCode)
@@ -49,7 +50,7 @@ namespace ClassLibrary
         public static async Task<JsonModel> LoadTempAussen()
         {
             string url = "http://localhost:8087/get/modbus.0.holdingRegisters.40014_Aussen";
-            
+
             using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
             {
                 if (response.IsSuccessStatusCode)
@@ -171,7 +172,7 @@ namespace ClassLibrary
         public static async Task<JsonModel> LoadZisUnten()
         {
             string url = "http://localhost:8087/get/modbus.0.holdingRegisters.40016_Zist_unten";
-            
+
             using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
             {
                 if (response.IsSuccessStatusCode)
@@ -189,7 +190,7 @@ namespace ClassLibrary
         public static async Task<JsonModel> LoadZisOben()
         {
             string url = "http://localhost:8087/get/modbus.0.holdingRegisters.40017_Zist_oben";
-            
+
             using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
             {
                 if (response.IsSuccessStatusCode)
@@ -301,11 +302,12 @@ namespace ClassLibrary
             }
         }
     }
+
         ///////////////////////////////////Ausgang
         ///
         public class Ausgaenge
         {
-            public static async Task<JsonModel> LoadPumpeSolar()
+            public static async Task<AusgaengeModel> LoadPumpeSolar()
             {
                 string url = "http://localhost:8087/get/modbus.0.coils.2_Pumpe_Solar";
 
@@ -313,7 +315,7 @@ namespace ClassLibrary
                 {
                     if (response.IsSuccessStatusCode)
                     {
-                        JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                    AusgaengeModel respObject = await response.Content.ReadAsAsync<AusgaengeModel>();
                         Console.WriteLine(respObject);
                         return respObject;
                     }
@@ -324,7 +326,7 @@ namespace ClassLibrary
                 }
             }
 
-            public static async Task<JsonModel> LoadPumpeZirku()
+            public static async Task<AusgaengeModel> LoadPumpeZirku()
             {
                 string url = "http://localhost:8087/get/modbus.0.coils.3_Pumpe_Zirku";
 
@@ -332,7 +334,7 @@ namespace ClassLibrary
                 {
                     if (response.IsSuccessStatusCode)
                     {
-                        JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                    AusgaengeModel respObject = await response.Content.ReadAsAsync<AusgaengeModel>();
                         Console.WriteLine(respObject);
                         return respObject;
                     }
@@ -344,7 +346,7 @@ namespace ClassLibrary
             }
 
 
-            public static async Task<JsonModel> LoadVentilSole1()
+            public static async Task<AusgaengeModel> LoadVentilSole1()
             {
                 string url = "http://localhost:8087/get/modbus.0.coils.4_Ventil_Sole1";
 
@@ -352,7 +354,7 @@ namespace ClassLibrary
                 {
                     if (response.IsSuccessStatusCode)
                     {
-                        JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                    AusgaengeModel respObject = await response.Content.ReadAsAsync<AusgaengeModel>();
                         Console.WriteLine(respObject);
                         return respObject;
                     }
@@ -363,7 +365,7 @@ namespace ClassLibrary
                 }
             }
 
-            public static async Task<JsonModel> LoadVentilSolar1()
+            public static async Task<AusgaengeModel> LoadVentilSolar1()
             {
                 string url = "http://localhost:8087/get/modbus.0.coils.5_Ventil_Solar1";
 
@@ -371,7 +373,7 @@ namespace ClassLibrary
                 {
                     if (response.IsSuccessStatusCode)
                     {
-                        JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                    AusgaengeModel respObject = await response.Content.ReadAsAsync<AusgaengeModel>();
                         Console.WriteLine(respObject);
                         return respObject;
                     }
@@ -382,7 +384,7 @@ namespace ClassLibrary
                 }
             }
 
-            public static async Task<JsonModel> LoadHeizbandALM()
+            public static async Task<AusgaengeModel> LoadHeizbandALM()
             {
                 string url = "http://localhost:8087/get/modbus.0.coils.6_Heizband_ALM";
 
@@ -390,7 +392,7 @@ namespace ClassLibrary
                 {
                     if (response.IsSuccessStatusCode)
                     {
-                        JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                    AusgaengeModel respObject = await response.Content.ReadAsAsync<AusgaengeModel>();
                         Console.WriteLine(respObject);
                         return respObject;
                     }
@@ -401,7 +403,7 @@ namespace ClassLibrary
                 }
             }
 
-            public static async Task<JsonModel> LoadPumpeSole()
+            public static async Task<AusgaengeModel> LoadPumpeSole()
             {
                 string url = "http://localhost:8087/get/modbus.0.coils.7_Pumpe_Sole";
 
@@ -409,7 +411,7 @@ namespace ClassLibrary
                 {
                     if (response.IsSuccessStatusCode)
                     {
-                        JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                    AusgaengeModel respObject = await response.Content.ReadAsAsync<AusgaengeModel>();
                         Console.WriteLine(respObject);
                         return respObject;
                     }
@@ -420,7 +422,7 @@ namespace ClassLibrary
                 }
             }
 
-            public static async Task<JsonModel> LoadVentilWW()
+            public static async Task<AusgaengeModel> LoadVentilWW()
             {
                 string url = "http://localhost:8087/get/modbus.0.coils.8_Ventil_WW";
 
@@ -428,7 +430,7 @@ namespace ClassLibrary
                 {
                     if (response.IsSuccessStatusCode)
                     {
-                        JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                    AusgaengeModel respObject = await response.Content.ReadAsAsync<AusgaengeModel>();
                         Console.WriteLine(respObject);
                         return respObject;
                     }
@@ -439,7 +441,7 @@ namespace ClassLibrary
                 }
             }
 
-            public static async Task<JsonModel> LoadPumpeHzkr()
+            public static async Task<AusgaengeModel> LoadPumpeHzkr()
             {
                 string url = "http://localhost:8087/get/modbus.0.coils.9_Pumpe_Hzkr";
 
@@ -447,7 +449,7 @@ namespace ClassLibrary
                 {
                     if (response.IsSuccessStatusCode)
                     {
-                        JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                    AusgaengeModel respObject = await response.Content.ReadAsAsync<AusgaengeModel>();
                         Console.WriteLine(respObject);
                         return respObject;
                     }
@@ -458,7 +460,7 @@ namespace ClassLibrary
                 }
             }
 
-            public static async Task<JsonModel> LoadWPAnf()
+            public static async Task<AusgaengeModel> LoadWPAnf()
             {
                 string url = "http://localhost:8087/get/modbus.0.coils.10_WP_Anf";
 
@@ -466,7 +468,7 @@ namespace ClassLibrary
                 {
                     if (response.IsSuccessStatusCode)
                     {
-                        JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                    AusgaengeModel respObject = await response.Content.ReadAsAsync<AusgaengeModel>();
                         Console.WriteLine(respObject);
                         return respObject;
                     }
@@ -477,7 +479,7 @@ namespace ClassLibrary
                 }
             }
 
-            public static async Task<JsonModel> LoadMischerAuf()
+            public static async Task<AusgaengeModel> LoadMischerAuf()
             {
                 string url = "http://localhost:8087/get/modbus.0.coils.11_Mischer_auf";
 
@@ -485,7 +487,7 @@ namespace ClassLibrary
                 {
                     if (response.IsSuccessStatusCode)
                     {
-                        JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                    AusgaengeModel respObject = await response.Content.ReadAsAsync<AusgaengeModel>();
                         Console.WriteLine(respObject);
                         return respObject;
                     }
@@ -496,7 +498,7 @@ namespace ClassLibrary
                 }
             }
 
-            public static async Task<JsonModel> LoadMischerZu()
+            public static async Task<AusgaengeModel> LoadMischerZu()
             {
                 string url = "http://localhost:8087/get/modbus.0.coils.12_Mischer_zu";
 
@@ -504,7 +506,7 @@ namespace ClassLibrary
                 {
                     if (response.IsSuccessStatusCode)
                     {
-                        JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                    AusgaengeModel respObject = await response.Content.ReadAsAsync<AusgaengeModel>();
                         Console.WriteLine(respObject);
                         return respObject;
                     }
@@ -515,7 +517,7 @@ namespace ClassLibrary
                 }
             }
 
-            public static async Task<JsonModel> LoadVentilSole2()
+            public static async Task<AusgaengeModel> LoadVentilSole2()
             {
                 string url = "http://localhost:8087/get/modbus.0.coils.13_Ventil_Sole2";
 
@@ -523,7 +525,7 @@ namespace ClassLibrary
                 {
                     if (response.IsSuccessStatusCode)
                     {
-                        JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                    AusgaengeModel respObject = await response.Content.ReadAsAsync<AusgaengeModel>();
                         Console.WriteLine(respObject);
                         return respObject;
                     }
@@ -534,7 +536,7 @@ namespace ClassLibrary
                 }
             }
 
-            public static async Task<JsonModel> LoadVentilSolar2()
+            public static async Task<AusgaengeModel> LoadVentilSolar2()
             {
                 string url = "http://localhost:8087/get/modbus.0.coils.14_Ventil_Solar2";
 
@@ -542,7 +544,7 @@ namespace ClassLibrary
                 {
                     if (response.IsSuccessStatusCode)
                     {
-                        JsonModel respObject = await response.Content.ReadAsAsync<JsonModel>();
+                    AusgaengeModel respObject = await response.Content.ReadAsAsync<AusgaengeModel>();
                         Console.WriteLine(respObject);
                         return respObject;
                     }

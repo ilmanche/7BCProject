@@ -29,355 +29,326 @@
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
-            this.txtaussen = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtPSHeiz = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtPSWW = new System.Windows.Forms.TextBox();
-            this.txtWPInnen = new System.Windows.Forms.TextBox();
-            this.txtSoleVl = new System.Windows.Forms.TextBox();
-            this.txtSoleRl = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblwpinnen = new System.Windows.Forms.Label();
-            this.lblsolev = new System.Windows.Forms.Label();
-            this.lblSoleRl = new System.Windows.Forms.Label();
-            this.txtKollektor = new System.Windows.Forms.TextBox();
-            this.txtsolar = new System.Windows.Forms.TextBox();
-            this.txtPSOben = new System.Windows.Forms.TextBox();
-            this.txtPSUnten = new System.Windows.Forms.TextBox();
-            this.lblKollektor = new System.Windows.Forms.Label();
-            this.lblsolarR = new System.Windows.Forms.Label();
-            this.lblPSOben = new System.Windows.Forms.Label();
-            this.lblPSUnten = new System.Windows.Forms.Label();
-            this.txtZisterneOben = new System.Windows.Forms.TextBox();
-            this.lblZisterneOben = new System.Windows.Forms.Label();
-            this.txtZisterneUnten = new System.Windows.Forms.TextBox();
-            this.txtfbhRL = new System.Windows.Forms.TextBox();
-            this.txtfbhVL = new System.Windows.Forms.TextBox();
+            this.txtWPAnf = new System.Windows.Forms.TextBox();
+            this.lblWp_Anf = new System.Windows.Forms.Label();
+            this.txtMischerzu = new System.Windows.Forms.TextBox();
+            this.txtMischerAuf = new System.Windows.Forms.TextBox();
+            this.txtPumpeSole = new System.Windows.Forms.TextBox();
+            this.lblMischerZu = new System.Windows.Forms.Label();
+            this.lblMischerAuf = new System.Windows.Forms.Label();
+            this.lblPumpeSole = new System.Windows.Forms.Label();
+            this.txtVentilSole2 = new System.Windows.Forms.TextBox();
+            this.txtVentilSole1 = new System.Windows.Forms.TextBox();
+            this.txtPumpeHzkr = new System.Windows.Forms.TextBox();
+            this.txtVentilWW = new System.Windows.Forms.TextBox();
+            this.lblVentilSole2 = new System.Windows.Forms.Label();
+            this.lblVentilSole = new System.Windows.Forms.Label();
+            this.lblPumpeHzkr = new System.Windows.Forms.Label();
+            this.lblVentil_WW = new System.Windows.Forms.Label();
+            this.txtVentilSolar2 = new System.Windows.Forms.TextBox();
+            this.lblSolar2 = new System.Windows.Forms.Label();
+            this.txtVentilSolar1 = new System.Windows.Forms.TextBox();
+            this.txtPumpeZirku = new System.Windows.Forms.TextBox();
+            this.txtPumpeSolar = new System.Windows.Forms.TextBox();
             this.txtalm = new System.Windows.Forms.TextBox();
-            this.lblZisterneUnten = new System.Windows.Forms.Label();
-            this.lblfbhrl = new System.Windows.Forms.Label();
+            this.lblVentilSolar1 = new System.Windows.Forms.Label();
+            this.lblZirku = new System.Windows.Forms.Label();
             this.lblfbhvl = new System.Windows.Forms.Label();
             this.lbl = new System.Windows.Forms.Label();
+            this.btnRun = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(22, 9);
+            this.label2.Location = new System.Drawing.Point(308, 62);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(143, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "Ausgänge";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // txtaussen
+            // txtWPAnf
             // 
-            this.txtaussen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtaussen.Location = new System.Drawing.Point(849, 292);
-            this.txtaussen.Name = "txtaussen";
-            this.txtaussen.Size = new System.Drawing.Size(100, 30);
-            this.txtaussen.TabIndex = 66;
+            this.txtWPAnf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWPAnf.Location = new System.Drawing.Point(1122, 423);
+            this.txtWPAnf.Name = "txtWPAnf";
+            this.txtWPAnf.Size = new System.Drawing.Size(100, 30);
+            this.txtWPAnf.TabIndex = 66;
             // 
-            // label3
+            // lblWp_Anf
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(853, 243);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 25);
-            this.label3.TabIndex = 65;
-            this.label3.Text = "Aussen ";
+            this.lblWp_Anf.AutoSize = true;
+            this.lblWp_Anf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWp_Anf.Location = new System.Drawing.Point(1126, 374);
+            this.lblWp_Anf.Name = "lblWp_Anf";
+            this.lblWp_Anf.Size = new System.Drawing.Size(90, 25);
+            this.lblWp_Anf.TabIndex = 65;
+            this.lblWp_Anf.Text = "Wp_Anf";
             // 
-            // txtPSHeiz
+            // txtMischerzu
             // 
-            this.txtPSHeiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPSHeiz.Location = new System.Drawing.Point(842, 456);
-            this.txtPSHeiz.Name = "txtPSHeiz";
-            this.txtPSHeiz.Size = new System.Drawing.Size(100, 30);
-            this.txtPSHeiz.TabIndex = 64;
+            this.txtMischerzu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMischerzu.Location = new System.Drawing.Point(719, 587);
+            this.txtMischerzu.Name = "txtMischerzu";
+            this.txtMischerzu.Size = new System.Drawing.Size(100, 30);
+            this.txtMischerzu.TabIndex = 61;
             // 
-            // label1
+            // txtMischerAuf
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(844, 407);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 25);
-            this.label1.TabIndex = 63;
-            this.label1.Text = "Puffer Heiz";
+            this.txtMischerAuf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMischerAuf.Location = new System.Drawing.Point(507, 587);
+            this.txtMischerAuf.Name = "txtMischerAuf";
+            this.txtMischerAuf.Size = new System.Drawing.Size(100, 30);
+            this.txtMischerAuf.TabIndex = 60;
             // 
-            // txtPSWW
+            // txtPumpeSole
             // 
-            this.txtPSWW.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPSWW.Location = new System.Drawing.Point(648, 456);
-            this.txtPSWW.Name = "txtPSWW";
-            this.txtPSWW.Size = new System.Drawing.Size(100, 30);
-            this.txtPSWW.TabIndex = 62;
+            this.txtPumpeSole.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPumpeSole.Location = new System.Drawing.Point(314, 587);
+            this.txtPumpeSole.Name = "txtPumpeSole";
+            this.txtPumpeSole.Size = new System.Drawing.Size(100, 30);
+            this.txtPumpeSole.TabIndex = 59;
             // 
-            // txtWPInnen
+            // lblMischerZu
             // 
-            this.txtWPInnen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWPInnen.Location = new System.Drawing.Point(446, 456);
-            this.txtWPInnen.Name = "txtWPInnen";
-            this.txtWPInnen.Size = new System.Drawing.Size(100, 30);
-            this.txtWPInnen.TabIndex = 61;
+            this.lblMischerZu.AutoSize = true;
+            this.lblMischerZu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMischerZu.Location = new System.Drawing.Point(714, 541);
+            this.lblMischerZu.Name = "lblMischerZu";
+            this.lblMischerZu.Size = new System.Drawing.Size(119, 25);
+            this.lblMischerZu.TabIndex = 57;
+            this.lblMischerZu.Text = "Mischer Zu";
+            this.lblMischerZu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtSoleVl
+            // lblMischerAuf
             // 
-            this.txtSoleVl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoleVl.Location = new System.Drawing.Point(234, 456);
-            this.txtSoleVl.Name = "txtSoleVl";
-            this.txtSoleVl.Size = new System.Drawing.Size(100, 30);
-            this.txtSoleVl.TabIndex = 60;
+            this.lblMischerAuf.AutoSize = true;
+            this.lblMischerAuf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMischerAuf.Location = new System.Drawing.Point(502, 541);
+            this.lblMischerAuf.Name = "lblMischerAuf";
+            this.lblMischerAuf.Size = new System.Drawing.Size(127, 25);
+            this.lblMischerAuf.TabIndex = 56;
+            this.lblMischerAuf.Text = "Mischer Auf";
             // 
-            // txtSoleRl
+            // lblPumpeSole
             // 
-            this.txtSoleRl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoleRl.Location = new System.Drawing.Point(41, 456);
-            this.txtSoleRl.Name = "txtSoleRl";
-            this.txtSoleRl.Size = new System.Drawing.Size(100, 30);
-            this.txtSoleRl.TabIndex = 59;
+            this.lblPumpeSole.AutoSize = true;
+            this.lblPumpeSole.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPumpeSole.Location = new System.Drawing.Point(309, 538);
+            this.lblPumpeSole.Name = "lblPumpeSole";
+            this.lblPumpeSole.Size = new System.Drawing.Size(129, 25);
+            this.lblPumpeSole.TabIndex = 55;
+            this.lblPumpeSole.Text = "Pumpe Sole";
             // 
-            // label4
+            // txtVentilSole2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(651, 407);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 25);
-            this.label4.TabIndex = 58;
-            this.label4.Text = "Puffer WW";
+            this.txtVentilSole2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVentilSole2.Location = new System.Drawing.Point(921, 423);
+            this.txtVentilSole2.Name = "txtVentilSole2";
+            this.txtVentilSole2.Size = new System.Drawing.Size(100, 30);
+            this.txtVentilSole2.TabIndex = 54;
             // 
-            // lblwpinnen
+            // txtVentilSole1
             // 
-            this.lblwpinnen.AutoSize = true;
-            this.lblwpinnen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblwpinnen.Location = new System.Drawing.Point(450, 410);
-            this.lblwpinnen.Name = "lblwpinnen";
-            this.lblwpinnen.Size = new System.Drawing.Size(107, 25);
-            this.lblwpinnen.TabIndex = 57;
-            this.lblwpinnen.Text = "WP Innen";
-            this.lblwpinnen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtVentilSole1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVentilSole1.Location = new System.Drawing.Point(719, 423);
+            this.txtVentilSole1.Name = "txtVentilSole1";
+            this.txtVentilSole1.Size = new System.Drawing.Size(100, 30);
+            this.txtVentilSole1.TabIndex = 53;
             // 
-            // lblsolev
+            // txtPumpeHzkr
             // 
-            this.lblsolev.AutoSize = true;
-            this.lblsolev.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsolev.Location = new System.Drawing.Point(238, 410);
-            this.lblsolev.Name = "lblsolev";
-            this.lblsolev.Size = new System.Drawing.Size(89, 25);
-            this.lblsolev.TabIndex = 56;
-            this.lblsolev.Text = "Sole VL";
+            this.txtPumpeHzkr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPumpeHzkr.Location = new System.Drawing.Point(507, 423);
+            this.txtPumpeHzkr.Name = "txtPumpeHzkr";
+            this.txtPumpeHzkr.Size = new System.Drawing.Size(100, 30);
+            this.txtPumpeHzkr.TabIndex = 52;
             // 
-            // lblSoleRl
+            // txtVentilWW
             // 
-            this.lblSoleRl.AutoSize = true;
-            this.lblSoleRl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoleRl.Location = new System.Drawing.Point(36, 407);
-            this.lblSoleRl.Name = "lblSoleRl";
-            this.lblSoleRl.Size = new System.Drawing.Size(88, 25);
-            this.lblSoleRl.TabIndex = 55;
-            this.lblSoleRl.Text = "Sole RL";
+            this.txtVentilWW.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVentilWW.Location = new System.Drawing.Point(314, 423);
+            this.txtVentilWW.Name = "txtVentilWW";
+            this.txtVentilWW.Size = new System.Drawing.Size(100, 30);
+            this.txtVentilWW.TabIndex = 51;
             // 
-            // txtKollektor
+            // lblVentilSole2
             // 
-            this.txtKollektor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKollektor.Location = new System.Drawing.Point(648, 292);
-            this.txtKollektor.Name = "txtKollektor";
-            this.txtKollektor.Size = new System.Drawing.Size(100, 30);
-            this.txtKollektor.TabIndex = 54;
+            this.lblVentilSole2.AutoSize = true;
+            this.lblVentilSole2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVentilSole2.Location = new System.Drawing.Point(908, 374);
+            this.lblVentilSole2.Name = "lblVentilSole2";
+            this.lblVentilSole2.Size = new System.Drawing.Size(135, 25);
+            this.lblVentilSole2.TabIndex = 50;
+            this.lblVentilSole2.Text = "Ventil Sole 2";
             // 
-            // txtsolar
+            // lblVentilSole
             // 
-            this.txtsolar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsolar.Location = new System.Drawing.Point(446, 292);
-            this.txtsolar.Name = "txtsolar";
-            this.txtsolar.Size = new System.Drawing.Size(100, 30);
-            this.txtsolar.TabIndex = 53;
+            this.lblVentilSole.AutoSize = true;
+            this.lblVentilSole.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVentilSole.Location = new System.Drawing.Point(700, 377);
+            this.lblVentilSole.Name = "lblVentilSole";
+            this.lblVentilSole.Size = new System.Drawing.Size(135, 25);
+            this.lblVentilSole.TabIndex = 49;
+            this.lblVentilSole.Text = "Ventil Sole 1";
+            this.lblVentilSole.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtPSOben
+            // lblPumpeHzkr
             // 
-            this.txtPSOben.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPSOben.Location = new System.Drawing.Point(234, 292);
-            this.txtPSOben.Name = "txtPSOben";
-            this.txtPSOben.Size = new System.Drawing.Size(100, 30);
-            this.txtPSOben.TabIndex = 52;
+            this.lblPumpeHzkr.AutoSize = true;
+            this.lblPumpeHzkr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPumpeHzkr.Location = new System.Drawing.Point(502, 374);
+            this.lblPumpeHzkr.Name = "lblPumpeHzkr";
+            this.lblPumpeHzkr.Size = new System.Drawing.Size(123, 25);
+            this.lblPumpeHzkr.TabIndex = 48;
+            this.lblPumpeHzkr.Text = "PumpeHzkr";
             // 
-            // txtPSUnten
+            // lblVentil_WW
             // 
-            this.txtPSUnten.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPSUnten.Location = new System.Drawing.Point(41, 292);
-            this.txtPSUnten.Name = "txtPSUnten";
-            this.txtPSUnten.Size = new System.Drawing.Size(100, 30);
-            this.txtPSUnten.TabIndex = 51;
+            this.lblVentil_WW.AllowDrop = true;
+            this.lblVentil_WW.AutoSize = true;
+            this.lblVentil_WW.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVentil_WW.Location = new System.Drawing.Point(309, 374);
+            this.lblVentil_WW.Name = "lblVentil_WW";
+            this.lblVentil_WW.Size = new System.Drawing.Size(121, 25);
+            this.lblVentil_WW.TabIndex = 47;
+            this.lblVentil_WW.Text = "Ventil_WW";
             // 
-            // lblKollektor
+            // txtVentilSolar2
             // 
-            this.lblKollektor.AutoSize = true;
-            this.lblKollektor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKollektor.Location = new System.Drawing.Point(651, 243);
-            this.lblKollektor.Name = "lblKollektor";
-            this.lblKollektor.Size = new System.Drawing.Size(97, 25);
-            this.lblKollektor.TabIndex = 50;
-            this.lblKollektor.Text = "Kollektor";
+            this.txtVentilSolar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVentilSolar2.Location = new System.Drawing.Point(1115, 281);
+            this.txtVentilSolar2.Name = "txtVentilSolar2";
+            this.txtVentilSolar2.Size = new System.Drawing.Size(100, 30);
+            this.txtVentilSolar2.TabIndex = 46;
             // 
-            // lblsolarR
+            // lblSolar2
             // 
-            this.lblsolarR.AutoSize = true;
-            this.lblsolarR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsolarR.Location = new System.Drawing.Point(450, 246);
-            this.lblsolarR.Name = "lblsolarR";
-            this.lblsolarR.Size = new System.Drawing.Size(95, 25);
-            this.lblsolarR.TabIndex = 49;
-            this.lblsolarR.Text = "Solar RL";
-            this.lblsolarR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSolar2.AutoSize = true;
+            this.lblSolar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSolar2.Location = new System.Drawing.Point(1090, 232);
+            this.lblSolar2.Name = "lblSolar2";
+            this.lblSolar2.Size = new System.Drawing.Size(142, 25);
+            this.lblSolar2.TabIndex = 45;
+            this.lblSolar2.Text = "Ventil_Solar2";
             // 
-            // lblPSOben
+            // txtVentilSolar1
             // 
-            this.lblPSOben.AutoSize = true;
-            this.lblPSOben.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPSOben.Location = new System.Drawing.Point(238, 246);
-            this.lblPSOben.Name = "lblPSOben";
-            this.lblPSOben.Size = new System.Drawing.Size(100, 25);
-            this.lblPSOben.TabIndex = 48;
-            this.lblPSOben.Text = "PS Oben";
+            this.txtVentilSolar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVentilSolar1.Location = new System.Drawing.Point(921, 281);
+            this.txtVentilSolar1.Name = "txtVentilSolar1";
+            this.txtVentilSolar1.Size = new System.Drawing.Size(100, 30);
+            this.txtVentilSolar1.TabIndex = 44;
             // 
-            // lblPSUnten
+            // txtPumpeZirku
             // 
-            this.lblPSUnten.AutoSize = true;
-            this.lblPSUnten.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPSUnten.Location = new System.Drawing.Point(36, 243);
-            this.lblPSUnten.Name = "lblPSUnten";
-            this.lblPSUnten.Size = new System.Drawing.Size(104, 25);
-            this.lblPSUnten.TabIndex = 47;
-            this.lblPSUnten.Text = "PS Unten";
+            this.txtPumpeZirku.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPumpeZirku.Location = new System.Drawing.Point(719, 281);
+            this.txtPumpeZirku.Name = "txtPumpeZirku";
+            this.txtPumpeZirku.Size = new System.Drawing.Size(100, 30);
+            this.txtPumpeZirku.TabIndex = 43;
             // 
-            // txtZisterneOben
+            // txtPumpeSolar
             // 
-            this.txtZisterneOben.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtZisterneOben.Location = new System.Drawing.Point(842, 150);
-            this.txtZisterneOben.Name = "txtZisterneOben";
-            this.txtZisterneOben.Size = new System.Drawing.Size(100, 30);
-            this.txtZisterneOben.TabIndex = 46;
-            // 
-            // lblZisterneOben
-            // 
-            this.lblZisterneOben.AutoSize = true;
-            this.lblZisterneOben.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblZisterneOben.Location = new System.Drawing.Point(817, 101);
-            this.lblZisterneOben.Name = "lblZisterneOben";
-            this.lblZisterneOben.Size = new System.Drawing.Size(149, 25);
-            this.lblZisterneOben.TabIndex = 45;
-            this.lblZisterneOben.Text = "Zisterne Oben";
-            // 
-            // txtZisterneUnten
-            // 
-            this.txtZisterneUnten.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtZisterneUnten.Location = new System.Drawing.Point(648, 150);
-            this.txtZisterneUnten.Name = "txtZisterneUnten";
-            this.txtZisterneUnten.Size = new System.Drawing.Size(100, 30);
-            this.txtZisterneUnten.TabIndex = 44;
-            // 
-            // txtfbhRL
-            // 
-            this.txtfbhRL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfbhRL.Location = new System.Drawing.Point(446, 150);
-            this.txtfbhRL.Name = "txtfbhRL";
-            this.txtfbhRL.Size = new System.Drawing.Size(100, 30);
-            this.txtfbhRL.TabIndex = 43;
-            // 
-            // txtfbhVL
-            // 
-            this.txtfbhVL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfbhVL.Location = new System.Drawing.Point(234, 150);
-            this.txtfbhVL.Name = "txtfbhVL";
-            this.txtfbhVL.Size = new System.Drawing.Size(100, 30);
-            this.txtfbhVL.TabIndex = 42;
+            this.txtPumpeSolar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPumpeSolar.Location = new System.Drawing.Point(507, 281);
+            this.txtPumpeSolar.Name = "txtPumpeSolar";
+            this.txtPumpeSolar.Size = new System.Drawing.Size(100, 30);
+            this.txtPumpeSolar.TabIndex = 42;
             // 
             // txtalm
             // 
             this.txtalm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtalm.Location = new System.Drawing.Point(41, 150);
+            this.txtalm.Location = new System.Drawing.Point(314, 281);
             this.txtalm.Name = "txtalm";
             this.txtalm.Size = new System.Drawing.Size(100, 30);
             this.txtalm.TabIndex = 41;
             // 
-            // lblZisterneUnten
+            // lblVentilSolar1
             // 
-            this.lblZisterneUnten.AutoSize = true;
-            this.lblZisterneUnten.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblZisterneUnten.Location = new System.Drawing.Point(632, 101);
-            this.lblZisterneUnten.Name = "lblZisterneUnten";
-            this.lblZisterneUnten.Size = new System.Drawing.Size(153, 25);
-            this.lblZisterneUnten.TabIndex = 40;
-            this.lblZisterneUnten.Text = "Zisterne Unten";
+            this.lblVentilSolar1.AutoSize = true;
+            this.lblVentilSolar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVentilSolar1.Location = new System.Drawing.Point(898, 232);
+            this.lblVentilSolar1.Name = "lblVentilSolar1";
+            this.lblVentilSolar1.Size = new System.Drawing.Size(142, 25);
+            this.lblVentilSolar1.TabIndex = 40;
+            this.lblVentilSolar1.Text = "Ventil_Solar1";
             // 
-            // lblfbhrl
+            // lblZirku
             // 
-            this.lblfbhrl.AutoSize = true;
-            this.lblfbhrl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblfbhrl.Location = new System.Drawing.Point(450, 104);
-            this.lblfbhrl.Name = "lblfbhrl";
-            this.lblfbhrl.Size = new System.Drawing.Size(86, 25);
-            this.lblfbhrl.TabIndex = 39;
-            this.lblfbhrl.Text = "FBH RL";
+            this.lblZirku.AutoSize = true;
+            this.lblZirku.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblZirku.Location = new System.Drawing.Point(700, 232);
+            this.lblZirku.Name = "lblZirku";
+            this.lblZirku.Size = new System.Drawing.Size(139, 25);
+            this.lblZirku.TabIndex = 39;
+            this.lblZirku.Text = "Pumpe_Zirku";
+            this.lblZirku.Click += new System.EventHandler(this.lblZirku_Click);
             // 
             // lblfbhvl
             // 
             this.lblfbhvl.AutoSize = true;
             this.lblfbhvl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblfbhvl.Location = new System.Drawing.Point(238, 104);
+            this.lblfbhvl.Location = new System.Drawing.Point(491, 232);
             this.lblfbhvl.Name = "lblfbhvl";
-            this.lblfbhvl.Size = new System.Drawing.Size(87, 25);
+            this.lblfbhvl.Size = new System.Drawing.Size(142, 25);
             this.lblfbhvl.TabIndex = 38;
-            this.lblfbhvl.Text = "FBH VL";
+            this.lblfbhvl.Text = "Pumpe_Solar";
+            this.lblfbhvl.Click += new System.EventHandler(this.lblfbhvl_Click);
             // 
             // lbl
             // 
             this.lbl.AutoSize = true;
             this.lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl.Location = new System.Drawing.Point(23, 101);
+            this.lbl.Location = new System.Drawing.Point(296, 232);
             this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(136, 25);
+            this.lbl.Size = new System.Drawing.Size(160, 25);
             this.lbl.TabIndex = 37;
-            this.lbl.Text = "ALM Aussen";
+            this.lbl.Text = "Heizband_ALM";
+            // 
+            // btnRun
+            // 
+            this.btnRun.Location = new System.Drawing.Point(301, 153);
+            this.btnRun.Name = "btnRun";
+            this.btnRun.Size = new System.Drawing.Size(186, 52);
+            this.btnRun.TabIndex = 67;
+            this.btnRun.Text = "Run";
+            this.btnRun.UseVisualStyleBackColor = true;
+            this.btnRun.Click += new System.EventHandler(this.button1_Click);
             // 
             // Ausgang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1166, 555);
-            this.Controls.Add(this.txtaussen);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtPSHeiz);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtPSWW);
-            this.Controls.Add(this.txtWPInnen);
-            this.Controls.Add(this.txtSoleVl);
-            this.Controls.Add(this.txtSoleRl);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.lblwpinnen);
-            this.Controls.Add(this.lblsolev);
-            this.Controls.Add(this.lblSoleRl);
-            this.Controls.Add(this.txtKollektor);
-            this.Controls.Add(this.txtsolar);
-            this.Controls.Add(this.txtPSOben);
-            this.Controls.Add(this.txtPSUnten);
-            this.Controls.Add(this.lblKollektor);
-            this.Controls.Add(this.lblsolarR);
-            this.Controls.Add(this.lblPSOben);
-            this.Controls.Add(this.lblPSUnten);
-            this.Controls.Add(this.txtZisterneOben);
-            this.Controls.Add(this.lblZisterneOben);
-            this.Controls.Add(this.txtZisterneUnten);
-            this.Controls.Add(this.txtfbhRL);
-            this.Controls.Add(this.txtfbhVL);
+            this.ClientSize = new System.Drawing.Size(1343, 660);
+            this.Controls.Add(this.btnRun);
+            this.Controls.Add(this.txtWPAnf);
+            this.Controls.Add(this.lblWp_Anf);
+            this.Controls.Add(this.txtMischerzu);
+            this.Controls.Add(this.txtMischerAuf);
+            this.Controls.Add(this.txtPumpeSole);
+            this.Controls.Add(this.lblMischerZu);
+            this.Controls.Add(this.lblMischerAuf);
+            this.Controls.Add(this.lblPumpeSole);
+            this.Controls.Add(this.txtVentilSole2);
+            this.Controls.Add(this.txtVentilSole1);
+            this.Controls.Add(this.txtPumpeHzkr);
+            this.Controls.Add(this.txtVentilWW);
+            this.Controls.Add(this.lblVentilSole2);
+            this.Controls.Add(this.lblVentilSole);
+            this.Controls.Add(this.lblPumpeHzkr);
+            this.Controls.Add(this.lblVentil_WW);
+            this.Controls.Add(this.txtVentilSolar2);
+            this.Controls.Add(this.lblSolar2);
+            this.Controls.Add(this.txtVentilSolar1);
+            this.Controls.Add(this.txtPumpeZirku);
+            this.Controls.Add(this.txtPumpeSolar);
             this.Controls.Add(this.txtalm);
-            this.Controls.Add(this.lblZisterneUnten);
-            this.Controls.Add(this.lblfbhrl);
+            this.Controls.Add(this.lblVentilSolar1);
+            this.Controls.Add(this.lblZirku);
             this.Controls.Add(this.lblfbhvl);
             this.Controls.Add(this.lbl);
             this.Controls.Add(this.label2);
@@ -391,35 +362,32 @@
 
         #endregion
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtaussen;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtPSHeiz;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtPSWW;
-        private System.Windows.Forms.TextBox txtWPInnen;
-        private System.Windows.Forms.TextBox txtSoleVl;
-        private System.Windows.Forms.TextBox txtSoleRl;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lblwpinnen;
-        private System.Windows.Forms.Label lblsolev;
-        private System.Windows.Forms.Label lblSoleRl;
-        private System.Windows.Forms.TextBox txtKollektor;
-        private System.Windows.Forms.TextBox txtsolar;
-        private System.Windows.Forms.TextBox txtPSOben;
-        private System.Windows.Forms.TextBox txtPSUnten;
-        private System.Windows.Forms.Label lblKollektor;
-        private System.Windows.Forms.Label lblsolarR;
-        private System.Windows.Forms.Label lblPSOben;
-        private System.Windows.Forms.Label lblPSUnten;
-        private System.Windows.Forms.TextBox txtZisterneOben;
-        private System.Windows.Forms.Label lblZisterneOben;
-        private System.Windows.Forms.TextBox txtZisterneUnten;
-        private System.Windows.Forms.TextBox txtfbhRL;
-        private System.Windows.Forms.TextBox txtfbhVL;
+        private System.Windows.Forms.TextBox txtWPAnf;
+        private System.Windows.Forms.Label lblWp_Anf;
+        private System.Windows.Forms.TextBox txtMischerzu;
+        private System.Windows.Forms.TextBox txtMischerAuf;
+        private System.Windows.Forms.TextBox txtPumpeSole;
+        private System.Windows.Forms.Label lblMischerZu;
+        private System.Windows.Forms.Label lblMischerAuf;
+        private System.Windows.Forms.Label lblPumpeSole;
+        private System.Windows.Forms.TextBox txtVentilSole2;
+        private System.Windows.Forms.TextBox txtVentilSole1;
+        private System.Windows.Forms.TextBox txtPumpeHzkr;
+        private System.Windows.Forms.TextBox txtVentilWW;
+        private System.Windows.Forms.Label lblVentilSole2;
+        private System.Windows.Forms.Label lblVentilSole;
+        private System.Windows.Forms.Label lblPumpeHzkr;
+        private System.Windows.Forms.Label lblVentil_WW;
+        private System.Windows.Forms.TextBox txtVentilSolar2;
+        private System.Windows.Forms.Label lblSolar2;
+        private System.Windows.Forms.TextBox txtVentilSolar1;
+        private System.Windows.Forms.TextBox txtPumpeZirku;
+        private System.Windows.Forms.TextBox txtPumpeSolar;
         private System.Windows.Forms.TextBox txtalm;
-        private System.Windows.Forms.Label lblZisterneUnten;
-        private System.Windows.Forms.Label lblfbhrl;
+        private System.Windows.Forms.Label lblVentilSolar1;
+        private System.Windows.Forms.Label lblZirku;
         private System.Windows.Forms.Label lblfbhvl;
         private System.Windows.Forms.Label lbl;
+        private System.Windows.Forms.Button btnRun;
     }
 }

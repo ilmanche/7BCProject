@@ -10,12 +10,12 @@ namespace WindowsFormsApp
     public partial class Form1 : Form
     {
         List<SolarRLModel> solarPanels = new List<SolarRLModel>();
-        List<AussenluftModel> aussenLuft = new List<AussenluftModel>();
-        List<FBHModel> fussboden = new List<FBHModel>();
-        List<PSModel> pufferspeicher = new List<PSModel>();
-        List<WPModel> waermepumpe = new List<WPModel>();
-        List<ZisterneModel> zisterne = new List<ZisterneModel>();
-        List<AusgaengeModel> ausgang = new List<AusgaengeModel>();
+        //List<AussenluftModel> aussenLuft = new List<AussenluftModel>();
+        //List<FBHModel> fussboden = new List<FBHModel>();
+        //List<PSModel> pufferspeicher = new List<PSModel>();
+        //List<WPModel> waermepumpe = new List<WPModel>();
+        //List<ZisterneModel> zisterne = new List<ZisterneModel>();
+        //List<AusgaengeModel> ausgang = new List<AusgaengeModel>();
 
 
 
@@ -44,12 +44,12 @@ namespace WindowsFormsApp
         private void LoadTemp()
         {
             solarPanels = SqliteDataAccess.LoadSolarPanel();
-            aussenLuft = SqliteDataAccess.LoadAussenLuftTemp();
-            fussboden = SqliteDataAccess.LoadFBH();
-            pufferspeicher = SqliteDataAccess.LoadPS();
-            waermepumpe = SqliteDataAccess.LoadWPModel();
-            zisterne = SqliteDataAccess.LoadZist();
-            ausgang = SqliteDataAccess.LoadAusgang();
+            //aussenLuft = SqliteDataAccess.LoadAussenLuftTemp();
+            //fussboden = SqliteDataAccess.LoadFBH();
+            //pufferspeicher = SqliteDataAccess.LoadPS();
+            //waermepumpe = SqliteDataAccess.LoadWPModel();
+            //zisterne = SqliteDataAccess.LoadZist();
+            //ausgang = SqliteDataAccess.LoadAusgang();
 
 
 
@@ -76,39 +76,39 @@ namespace WindowsFormsApp
 
         private async Task ausgangbtn_ClickAsync(object sender, EventArgs e)
         {
-            var Pumpe_Solar = await Ausgaenge.LoadPumpeSolar();
-            var Pumpe_Zirku = await Ausgaenge.LoadPumpeZirku();
-            var Ventil_Sole1 = await Ausgaenge.LoadVentilSole1();
-            var Ventil_Solar1 = await Ausgaenge.LoadVentilSolar1();
-            var Heizband_ALM = await Ausgaenge.LoadHeizbandALM();
-            var Pumpe_Sole = await Ausgaenge.LoadPumpeSole();
-            var Ventil_WW = await Ausgaenge.LoadVentilWW();
-            var Pumpe_Hzkr = await Ausgaenge.LoadPumpeHzkr();
-            var Mischer_Auf = await Ausgaenge.LoadMischerAuf();
-            var Mischer_Zu = await Ausgaenge.LoadMischerZu();
-            var Ventil_Sole2 = await Ausgaenge.LoadVentilSole2();
-            // var Ventil_Solar2 = await Ausgaenge.LoadVentilSolar2();
-            var Wp_Anf = await Ausgaenge.LoadWPAnf();
+            //var Pumpe_Solar = await Ausgaenge.LoadPumpeSolar();
+            //var Pumpe_Zirku = await Ausgaenge.LoadPumpeZirku();
+            //var Ventil_Sole1 = await Ausgaenge.LoadVentilSole1();
+            //var Ventil_Solar1 = await Ausgaenge.LoadVentilSolar1();
+            //var Heizband_ALM = await Ausgaenge.LoadHeizbandALM();
+            //var Pumpe_Sole = await Ausgaenge.LoadPumpeSole();
+            //var Ventil_WW = await Ausgaenge.LoadVentilWW();
+            //var Pumpe_Hzkr = await Ausgaenge.LoadPumpeHzkr();
+            //var Mischer_Auf = await Ausgaenge.LoadMischerAuf();
+            //var Mischer_Zu = await Ausgaenge.LoadMischerZu();
+            //var Ventil_Sole2 = await Ausgaenge.LoadVentilSole2();
+            //// var Ventil_Solar2 = await Ausgaenge.LoadVentilSolar2();
+            //var Wp_Anf = await Ausgaenge.LoadWPAnf();
 
 
-            AusgaengeModel ausgaenge = new AusgaengeModel();
-            ausgaenge.date = DateTime.Now.ToString();
-            ausgaenge.Heizband_ALM = Heizband_ALM.state;
-            ausgaenge.Mischer_Auf = Mischer_Auf.state;
-            ausgaenge.Mischer_Zu = Mischer_Zu.state;
-            ausgaenge.Pumpe_Hzkr = Pumpe_Hzkr.state;
-            ausgaenge.Pumpe_Solar = Pumpe_Solar.state;
-            ausgaenge.Pumpe_Sole = Pumpe_Sole.state;
-            ausgaenge.Pumpe_Zirku = Pumpe_Zirku.state;
-            ausgaenge.Ventil_Solar1 = Ventil_Solar1.state;
-            // ausgaenge.Ventil_Solar2 = Ventil_Solar2.state;
-            ausgaenge.Ventil_Sole1 = Ventil_Sole1.state;
-            ausgaenge.Ventil_Sole2 = Ventil_Sole2.state;
-            ausgaenge.Ventil_WW = Ventil_WW.state;
-            ausgaenge.Wp_Anf = Wp_Anf.state;
+            //AusgaengeModel ausgaenge = new AusgaengeModel();
+            //ausgaenge.date = DateTime.Now.ToString();
+            //ausgaenge.Heizband_ALM = Heizband_ALM.state;
+            //ausgaenge.Mischer_Auf = Mischer_Auf.state;
+            //ausgaenge.Mischer_Zu = Mischer_Zu.state;
+            //ausgaenge.Pumpe_Hzkr = Pumpe_Hzkr.state;
+            //ausgaenge.Pumpe_Solar = Pumpe_Solar.state;
+            //ausgaenge.Pumpe_Sole = Pumpe_Sole.state;
+            //ausgaenge.Pumpe_Zirku = Pumpe_Zirku.state;
+            //ausgaenge.Ventil_Solar1 = Ventil_Solar1.state;
+            //// ausgaenge.Ventil_Solar2 = Ventil_Solar2.state;
+            //ausgaenge.Ventil_Sole1 = Ventil_Sole1.state;
+            //ausgaenge.Ventil_Sole2 = Ventil_Sole2.state;
+            //ausgaenge.Ventil_WW = Ventil_WW.state;
+            //ausgaenge.Wp_Anf = Wp_Anf.state;
 
-            ausgang.Add(ausgaenge);
-            SqliteDataAccess.SaveAusgang(ausgaenge);
+            //ausgang.Add(ausgaenge);
+            //SqliteDataAccess.SaveAusgang(ausgaenge);
 
 
         }
@@ -192,45 +192,45 @@ namespace WindowsFormsApp
             SqliteDataAccess.SaveSolarPanel(sol);
 
 
-            AussenluftModel alm = new AussenluftModel();
-            alm.alm_aussen_temperatur = aussenluftdata1.val;
-            alm.aussen_temperatur = aussenluftdata2.val;
-            aussenLuft.Add(alm);
-            SqliteDataAccess.SaveAußenluft(alm);
+            //AussenluftModel alm = new AussenluftModel();
+            //alm.alm_aussen_temperatur = aussenluftdata1.val;
+            //alm.aussen_temperatur = aussenluftdata2.val;
+            //aussenLuft.Add(alm);
+            //SqliteDataAccess.SaveAußenluft(alm);
 
 
-            FBHModel fbh = new FBHModel();
-            fbh.FBH_VR = fbhdata1.val;
-            fbh.FBH_VL = fbhdata2.val;
-            fbh.date = DateTime.Now.ToString();
-            fussboden.Add(fbh);
-            SqliteDataAccess.SaveFBH(fbh);
+            //FBHModel fbh = new FBHModel();
+            //fbh.FBH_VR = fbhdata1.val;
+            //fbh.FBH_VL = fbhdata2.val;
+            //fbh.date = DateTime.Now.ToString();
+            //fussboden.Add(fbh);
+            //SqliteDataAccess.SaveFBH(fbh);
 
 
-            PSModel ps = new PSModel();
-            ps.PS_unten = psobendata.val;
-            ps.PS_oben = psuntendata.val;
-            ps.PS_WW = psww.val;
-            ps.PS_WW_Zulauf = wwzulauf.val;
-            ps.PS_Heiz = psheiz.val;
-            ps.date = DateTime.Now.ToString();
-            pufferspeicher.Add(ps);
-            SqliteDataAccess.SavePS(ps);
+            //PSModel ps = new PSModel();
+            //ps.PS_unten = psobendata.val;
+            //ps.PS_oben = psuntendata.val;
+            //ps.PS_WW = psww.val;
+            //ps.PS_WW_Zulauf = wwzulauf.val;
+            //ps.PS_Heiz = psheiz.val;
+            //ps.date = DateTime.Now.ToString();
+            //pufferspeicher.Add(ps);
+            //SqliteDataAccess.SavePS(ps);
 
-            WPModel wp = new WPModel();
-            wp.Sole_rl = wp_sole_rl.val;
-            wp.Sole_vl = wp_sole_vl.val;
-            wp.Wp_innen = wp_innen.val;
-            wp.date = DateTime.Now.ToString();
-            waermepumpe.Add(wp);
-            SqliteDataAccess.SavePS(ps);
+            //WPModel wp = new WPModel();
+            //wp.Sole_rl = wp_sole_rl.val;
+            //wp.Sole_vl = wp_sole_vl.val;
+            //wp.Wp_innen = wp_innen.val;
+            //wp.date = DateTime.Now.ToString();
+            //waermepumpe.Add(wp);
+            //SqliteDataAccess.SavePS(ps);
 
-            ZisterneModel zz = new ZisterneModel();
-            zz.Zist_unten = zisterne_unten.val;
-            zz.Zist_oben = zisterne_oben.val;
-            wp.date = DateTime.Now.ToString();
-            zisterne.Add(zz);
-            SqliteDataAccess.SaveZisterne(zz);
+            //ZisterneModel zz = new ZisterneModel();
+            //zz.Zist_unten = zisterne_unten.val;
+            //zz.Zist_oben = zisterne_oben.val;
+            //wp.date = DateTime.Now.ToString();
+            //zisterne.Add(zz);
+            //SqliteDataAccess.SaveZisterne(zz);
 
 
             //txtsolar.Text = sol.Temperatur.ToString() + "°C";

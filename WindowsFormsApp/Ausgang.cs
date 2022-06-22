@@ -71,7 +71,6 @@ namespace WindowsFormsApp
             txtMischerAuf.Text = ausgaenge.Mischer_Auf.ToString();  
             txtMischerzu.Text = ausgaenge.Mischer_Zu.ToString();
             txtPumpeHzkr.Text = ausgaenge.Pumpe_Hzkr.ToString();
-           // txtPumpeSolar.Text = ausgaenge.Pumpe_Solar.ToString();
             txtPumpeSole.Text = ausgaenge.Pumpe_Sole.ToString();
             txtPumpeZirku.Text = ausgaenge.Pumpe_Zirku.ToString();
             txtVentilSolar1.Text = ausgaenge.Ventil_Solar1.ToString();
@@ -79,6 +78,9 @@ namespace WindowsFormsApp
             txtWPAnf.Text = ausgaenge.Wp_Anf.ToString();
             txtVentilWW.Text = ausgaenge.Ventil_WW.ToString();
             txtPumpeSole.Text = ausgaenge.Pumpe_Sole.ToString();
+            txtVentilSole1.Text = ausgaenge.Ventil_Sole1.ToString();
+            txtVentilSole2.Text = ausgaenge.Ventil_Sole2.ToString();
+            txtPumpeSolar.Text = ausgaenge.Pumpe_Solar.ToString();  
 
 
             ausgang.Add(ausgaenge);

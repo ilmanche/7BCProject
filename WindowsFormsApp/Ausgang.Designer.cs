@@ -31,11 +31,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtWPAnf = new System.Windows.Forms.TextBox();
             this.lblWp_Anf = new System.Windows.Forms.Label();
-            this.txtPufferWW = new System.Windows.Forms.TextBox();
             this.txtMischerzu = new System.Windows.Forms.TextBox();
             this.txtMischerAuf = new System.Windows.Forms.TextBox();
             this.txtPumpeSole = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.lblMischerZu = new System.Windows.Forms.Label();
             this.lblMischerAuf = new System.Windows.Forms.Label();
             this.lblPumpeSole = new System.Windows.Forms.Label();
@@ -89,14 +87,6 @@
             this.lblWp_Anf.TabIndex = 65;
             this.lblWp_Anf.Text = "Wp_Anf";
             // 
-            // txtPufferWW
-            // 
-            this.txtPufferWW.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPufferWW.Location = new System.Drawing.Point(921, 587);
-            this.txtPufferWW.Name = "txtPufferWW";
-            this.txtPufferWW.Size = new System.Drawing.Size(100, 30);
-            this.txtPufferWW.TabIndex = 62;
-            // 
             // txtMischerzu
             // 
             this.txtMischerzu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -120,16 +110,6 @@
             this.txtPumpeSole.Name = "txtPumpeSole";
             this.txtPumpeSole.Size = new System.Drawing.Size(100, 30);
             this.txtPumpeSole.TabIndex = 59;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(924, 538);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 25);
-            this.label4.TabIndex = 58;
-            this.label4.Text = "Puffer WW";
             // 
             // lblMischerZu
             // 
@@ -347,11 +327,9 @@
             this.Controls.Add(this.btnRun);
             this.Controls.Add(this.txtWPAnf);
             this.Controls.Add(this.lblWp_Anf);
-            this.Controls.Add(this.txtPufferWW);
             this.Controls.Add(this.txtMischerzu);
             this.Controls.Add(this.txtMischerAuf);
             this.Controls.Add(this.txtPumpeSole);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.lblMischerZu);
             this.Controls.Add(this.lblMischerAuf);
             this.Controls.Add(this.lblPumpeSole);
@@ -386,11 +364,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtWPAnf;
         private System.Windows.Forms.Label lblWp_Anf;
-        private System.Windows.Forms.TextBox txtPufferWW;
         private System.Windows.Forms.TextBox txtMischerzu;
         private System.Windows.Forms.TextBox txtMischerAuf;
         private System.Windows.Forms.TextBox txtPumpeSole;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblMischerZu;
         private System.Windows.Forms.Label lblMischerAuf;
         private System.Windows.Forms.Label lblPumpeSole;

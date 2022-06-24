@@ -37,7 +37,6 @@ namespace WindowsFormsApp
             this.btnRefresh = new System.Windows.Forms.Button();
             this.mainpanel = new System.Windows.Forms.Panel();
             this.NavPanel = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dashlbl = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.headPanel = new System.Windows.Forms.Panel();
@@ -45,6 +44,7 @@ namespace WindowsFormsApp
             this.headLabel = new System.Windows.Forms.Label();
             this.eingangbtn = new System.Windows.Forms.Button();
             this.ausgangbtn = new System.Windows.Forms.Button();
+            this.btnHistory = new System.Windows.Forms.Button();
             this.NavPanel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.headPanel.SuspendLayout();
@@ -104,20 +104,12 @@ namespace WindowsFormsApp
             // NavPanel
             // 
             this.NavPanel.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.NavPanel.Controls.Add(this.dateTimePicker1);
             this.NavPanel.Controls.Add(this.dashlbl);
             this.NavPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.NavPanel.Location = new System.Drawing.Point(206, 0);
             this.NavPanel.Name = "NavPanel";
             this.NavPanel.Size = new System.Drawing.Size(994, 100);
             this.NavPanel.TabIndex = 5;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(671, 33);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(300, 26);
-            this.dateTimePicker1.TabIndex = 1;
             // 
             // dashlbl
             // 
@@ -136,6 +128,7 @@ namespace WindowsFormsApp
             this.flowLayoutPanel1.Controls.Add(this.headPanel);
             this.flowLayoutPanel1.Controls.Add(this.eingangbtn);
             this.flowLayoutPanel1.Controls.Add(this.ausgangbtn);
+            this.flowLayoutPanel1.Controls.Add(this.btnHistory);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -159,9 +152,9 @@ namespace WindowsFormsApp
             this.pictureBox1.BackColor = System.Drawing.Color.Teal;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(138, 9);
+            this.pictureBox1.Location = new System.Drawing.Point(153, 9);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(53, 32);
+            this.pictureBox1.Size = new System.Drawing.Size(44, 30);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -212,6 +205,21 @@ namespace WindowsFormsApp
             this.ausgangbtn.UseVisualStyleBackColor = false;
             this.ausgangbtn.Click += new System.EventHandler(this.ausgangbtn_Click);
             // 
+            // btnHistory
+            // 
+            this.btnHistory.AutoSize = true;
+            this.btnHistory.BackColor = System.Drawing.Color.Teal;
+            this.btnHistory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHistory.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnHistory.Location = new System.Drawing.Point(3, 197);
+            this.btnHistory.Name = "btnHistory";
+            this.btnHistory.Size = new System.Drawing.Size(200, 38);
+            this.btnHistory.TabIndex = 2;
+            this.btnHistory.Text = "History";
+            this.btnHistory.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -260,7 +268,7 @@ namespace WindowsFormsApp
         private System.Windows.Forms.Label dashlbl;
         private System.Windows.Forms.Button eingangbtn;
         private System.Windows.Forms.Button ausgangbtn;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btnHistory;
     }
 }
 

@@ -36,7 +36,7 @@ namespace WindowsFormsApp
 
         }
 
-        }
+        
  
         
 
@@ -91,16 +91,7 @@ namespace WindowsFormsApp
 
         }
 
-        private async void eingangbtn_Click(object sender, EventArgs e)
-        {
-            loadform(new Eingang());
-
-           
-
-
-
-
-        }
+      
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -132,28 +123,17 @@ namespace WindowsFormsApp
             loadform(new Ausgang());
         }
 
-        //private async Task dateTimePicker1_ValueChangedAsync(object sender, EventArgs e)
-        //{
-
-        }
-
         private void eingangbtn_Click_1(object sender, EventArgs e)
         {
             loadform(new Eingang());
 
-        //    var result = zisterne.Where(d =>
-        //    {
-        //        return d.date == dateTimePicker1.Value.ToString();
-        //    }).ToList();
+        }
 
+        //private async Task dateTimePicker1_ValueChangedAsync(object sender, EventArgs e)
+        //{
 
-        //    ZisterneModel zz = new ZisterneModel();
-        //    zz.Zist_unten = zisterne.Select(d => d.Zist_unten).First();
-        //    zz.Zist_unten = zisterne.Select(d => d.Zist_oben).First();
-
-        //    txtZisterneOben.Text = zz.Zist_oben.ToString() + "°C";
-        //    txtZisterneUnten.Text = zz.Zist_unten.ToString() + "°C";
-
-        //}
     }
-}
+
+       
+    }
+

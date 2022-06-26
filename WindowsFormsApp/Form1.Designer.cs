@@ -219,6 +219,7 @@ namespace WindowsFormsApp
             this.btnHistory.TabIndex = 2;
             this.btnHistory.Text = "History";
             this.btnHistory.UseVisualStyleBackColor = false;
+            this.btnHistory.Click += new System.EventHandler(this.btnHistory_Click);
             // 
             // Form1
             // 

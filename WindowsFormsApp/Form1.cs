@@ -129,6 +129,16 @@ namespace WindowsFormsApp
 
         }
 
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHistory_Click(object sender, EventArgs e)
+        {
+            loadform(new History());
+        }
+
         //private async Task dateTimePicker1_ValueChangedAsync(object sender, EventArgs e)
         //{
 

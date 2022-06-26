@@ -21,6 +21,14 @@ namespace ClassLibrary.Models.Ausgänge
         public bool Pumpe_Sole { get; set; }
         public bool Mischer_Auf { get; set; }
         public bool Mischer_Zu { get; set; }
-        public string date { get; set; }    
+        public string date { get; set; }
+        
+
+        public string fullrow
+        {
+            get
+            { return $"{Ventil_Solar1}  {date}"; }
+
+        }
     }
 }

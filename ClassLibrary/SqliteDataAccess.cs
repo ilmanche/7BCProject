@@ -83,6 +83,16 @@ namespace ClassLibrary
 
         }
 
+        public static List<AusgaengeModel> LoadAusgang()
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                var output = cnn.Query<AusgaengeModel>("select * from Ausgaenge", new DynamicParameters());
+                return output.ToList();
+            }
+
+        }
+
 
 
         public static void SaveSolarPanel(SolarRLModel solarRl)

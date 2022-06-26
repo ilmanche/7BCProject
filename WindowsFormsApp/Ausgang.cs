@@ -64,7 +64,7 @@ namespace WindowsFormsApp
             ausgaenge.Ventil_Sole2 = Ventil_Sole2.Ventil_Sole2;
             ausgaenge.Ventil_WW = Ventil_WW.Ventil_WW;
             ausgaenge.Wp_Anf = Wp_Anf.Wp_Anf;
-            ausgaenge.date = DateTime.Now.ToString();
+            ausgaenge.date = DateTime.Now.ToString("MM/dd/yyyy");
 
 
             txtalm.Text = ausgaenge.Heizband_ALM.ToString();

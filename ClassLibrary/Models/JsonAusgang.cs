@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PLCLibrary.ApiHelper
+namespace ClassLibrary.Models
 {
-    public class ApiHelper
+    public class JsonAusgang
     {
+        public bool val { get; set; }
+
     }
 }

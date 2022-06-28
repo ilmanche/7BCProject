@@ -8,6 +8,8 @@ namespace ClassLibrary.Models.Ausgänge
 {
     public class AusgaengeModel
     {
+        String stdDetails = " {0, -10} {1, -20} {2, -20} {3, -20} {4, -16}, {5, -16} {6, -16} {7, -16} {8, -16} {9, -16} {10, -16} {11, -16} {12, -16} {13, -16} ";
+
         public bool Heizband_ALM { get; set; }
         public bool Pumpe_Solar { get; set; }
         public bool Pumpe_Zirku { get; set; }
@@ -27,7 +29,7 @@ namespace ClassLibrary.Models.Ausgänge
         public string fullrow
         {
             get
-            { return $"{Ventil_Solar1}  {date}"; }
+            { return  $" {Heizband_ALM}  {Pumpe_Solar} {Pumpe_Zirku}  {Ventil_Solar1}  {Ventil_Solar2} {Ventil_WW} {Pumpe_Hzkr} {Ventil_Sole1} {Ventil_Sole2} {Wp_Anf} {Pumpe_Sole} {Mischer_Auf} {Mischer_Zu} {date}"; }
 
         }
     }

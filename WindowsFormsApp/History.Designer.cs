@@ -36,12 +36,13 @@
             // 
             // listboxeingang
             // 
+            this.listboxeingang.ColumnWidth = 4;
             this.listboxeingang.FormattingEnabled = true;
             this.listboxeingang.ItemHeight = 20;
-            this.listboxeingang.Location = new System.Drawing.Point(262, 221);
+            this.listboxeingang.Location = new System.Drawing.Point(274, 201);
             this.listboxeingang.Name = "listboxeingang";
-            this.listboxeingang.Size = new System.Drawing.Size(787, 444);
-            this.listboxeingang.TabIndex = 0;
+            this.listboxeingang.Size = new System.Drawing.Size(1077, 504);
+            this.listboxeingang.TabIndex = 1;
             this.listboxeingang.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // dateTimePicker2
@@ -79,13 +80,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1097, 654);
+            this.ClientSize = new System.Drawing.Size(1430, 750);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnloadeingang);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.listboxeingang);
             this.Name = "History";
             this.Text = "History";
+            this.Load += new System.EventHandler(this.History_Load);
             this.ResumeLayout(false);
 
         }

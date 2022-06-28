@@ -39,7 +39,7 @@ namespace WindowsFormsApp
         private void LoadAusgang()
         {
            ausgang = SqliteDataAccess.LoadAusgang();
-            listboxeingang.Items.Add(String.Format(stdDetails,
+            listboxeingang.Items.Add(String.Format(
         "Heizband_ALM",
         "Pumpe_Solar",
         "Pumpe_Zirku",
@@ -93,7 +93,7 @@ namespace WindowsFormsApp
  
 
              var queryAllCustomers = (from a in ausgang
-                                     where a.date.ToString() == dateTimePicker2.Text
+                                     where a.date.ToString().Contains(dateTimePicker2.Text)
                                      select a).ToList();
             foreach (var query in queryAllCustomers)
             {

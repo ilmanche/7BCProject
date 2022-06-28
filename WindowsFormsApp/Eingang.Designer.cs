@@ -360,7 +360,7 @@
             this.lblZulauf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblZulauf.Location = new System.Drawing.Point(253, 562);
             this.lblZulauf.Name = "lblZulauf";
-            this.lblZulauf.Size = new System.Drawing.Size(180, 38);
+            this.lblZulauf.Size = new System.Drawing.Size(120, 25);
             this.lblZulauf.TabIndex = 68;
             this.lblZulauf.Text = "WW Zulauf";
             // 

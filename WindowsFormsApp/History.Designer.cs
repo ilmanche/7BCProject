@@ -31,16 +31,18 @@
             this.listboxeingang = new System.Windows.Forms.ListBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.btnloadeingang = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnausgang = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listboxeingang
             // 
             this.listboxeingang.ColumnWidth = 4;
             this.listboxeingang.FormattingEnabled = true;
+            this.listboxeingang.HorizontalScrollbar = true;
             this.listboxeingang.ItemHeight = 20;
             this.listboxeingang.Location = new System.Drawing.Point(274, 201);
             this.listboxeingang.Name = "listboxeingang";
+            this.listboxeingang.ScrollAlwaysVisible = true;
             this.listboxeingang.Size = new System.Drawing.Size(1077, 504);
             this.listboxeingang.TabIndex = 1;
             this.listboxeingang.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
@@ -64,24 +66,24 @@
             this.btnloadeingang.TabIndex = 3;
             this.btnloadeingang.Text = "Eingänge laden";
             this.btnloadeingang.UseVisualStyleBackColor = true;
-            this.btnloadeingang.Click += new System.EventHandler(this.button1_Click);
+            this.btnloadeingang.Click += new System.EventHandler(this.btnloadeingang_Click);
             // 
-            // button1
+            // btnausgang
             // 
-            this.button1.Location = new System.Drawing.Point(403, 89);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 71);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Ausgänge laden";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.btnausgang.Location = new System.Drawing.Point(403, 89);
+            this.btnausgang.Name = "btnausgang";
+            this.btnausgang.Size = new System.Drawing.Size(112, 71);
+            this.btnausgang.TabIndex = 4;
+            this.btnausgang.Text = "Ausgänge laden";
+            this.btnausgang.UseVisualStyleBackColor = true;
+            this.btnausgang.Click += new System.EventHandler(this.btnausgang_Click);
             // 
             // History
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1430, 750);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnausgang);
             this.Controls.Add(this.btnloadeingang);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.listboxeingang);
@@ -97,6 +99,6 @@
         private System.Windows.Forms.ListBox listboxeingang;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Button btnloadeingang;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnausgang;
     }
 }

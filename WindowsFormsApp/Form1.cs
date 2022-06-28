@@ -1,5 +1,4 @@
 ﻿using ClassLibrary;
-using ClassLibrary.Models.Ausgänge;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -20,7 +19,8 @@ namespace WindowsFormsApp
         public Form1()
         {
             InitializeComponent();
-            
+            ApiHelper.InitializeClient();
+
         }
 
         public void loadform(object Form)

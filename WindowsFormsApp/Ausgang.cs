@@ -1,5 +1,4 @@
 ﻿using ClassLibrary;
-using ClassLibrary.Models.Ausgänge;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,8 +33,8 @@ namespace WindowsFormsApp
 
         private async void button1_Click(object sender, EventArgs e)
         {
-         //   var PumpeSolar = await Ausgaenge.LoadPumpeSolar();
-            var Pumpe_Zirku = await Ausgaenge.LoadPumpeZirku();
+            var PumpeSolar = await Ausgaenge.LoadPumpeSolar();
+            var pumpe_Zirku = await Ausgaenge.LoadPumpeZirku();
             var Ventil_Sole1 = await Ausgaenge.LoadVentilSole1();
             var Ventil_Solar1 = await Ausgaenge.LoadVentilSolar1();
             var Heizband_ALM = await Ausgaenge.LoadHeizbandALM();
@@ -51,19 +50,19 @@ namespace WindowsFormsApp
 
             AusgaengeModel ausgaenge = new AusgaengeModel();
             ausgaenge.date = DateTime.Now.ToString();
-            ausgaenge.Heizband_ALM = Heizband_ALM.Heizband_ALM;
-            ausgaenge.Mischer_Auf = Mischer_Auf.Mischer_Auf;
-            ausgaenge.Mischer_Zu = Mischer_Zu.Mischer_Zu;
-            ausgaenge.Pumpe_Hzkr = Pumpe_Hzkr.Pumpe_Hzkr;
-           // ausgaenge.Pumpe_Solar = PumpeSolar.state;
-            ausgaenge.Pumpe_Sole = Pumpe_Sole.Pumpe_Sole;
-            ausgaenge.Pumpe_Zirku = Pumpe_Zirku.Pumpe_Zirku;
-            ausgaenge.Ventil_Solar1 = Ventil_Solar1.Ventil_Solar1;
-            ausgaenge.Ventil_Solar2 = Ventil_Solar2.Ventil_Solar2;
-            ausgaenge.Ventil_Sole1 = Ventil_Sole1.Ventil_Sole1;
-            ausgaenge.Ventil_Sole2 = Ventil_Sole2.Ventil_Sole2;
-            ausgaenge.Ventil_WW = Ventil_WW.Ventil_WW;
-            ausgaenge.Wp_Anf = Wp_Anf.Wp_Anf;
+            ausgaenge.Heizband_ALM = Heizband_ALM.val;
+            ausgaenge.Mischer_Auf = Mischer_Auf.val;
+            ausgaenge.Mischer_Zu = Mischer_Zu.val;
+            ausgaenge.Pumpe_Hzkr = Pumpe_Hzkr.val;
+        ausgaenge.Pumpe_Solar = PumpeSolar.val;
+            ausgaenge.Pumpe_Sole = Pumpe_Sole.val;
+            ausgaenge.Pumpe_Zirku = pumpe_Zirku.val;
+            ausgaenge.Ventil_Solar1 = Ventil_Solar1.val;
+            ausgaenge.Ventil_Solar2 = Ventil_Solar2.val;
+            ausgaenge.Ventil_Sole1 = Ventil_Sole1.val;
+            ausgaenge.Ventil_Sole2 = Ventil_Sole2.val;
+            ausgaenge.Ventil_WW = Ventil_WW.val;
+            ausgaenge.Wp_Anf = Wp_Anf.val;
             ausgaenge.date = DateTime.Now.ToString();
 
 
@@ -93,6 +92,11 @@ namespace WindowsFormsApp
         }
 
         private void lblZirku_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Ausgang_Load(object sender, EventArgs e)
         {
 
         }

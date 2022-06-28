@@ -355,6 +355,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Ausgang";
             this.Text = "Ausgang";
+            this.Load += new System.EventHandler(this.Ausgang_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -15,12 +15,16 @@ namespace WindowsFormsApp
     {
         List<AusgaengeModel> ausgang = new List<AusgaengeModel>();
 
+        //Initialisierung des API Clients 
+        //Konstrukturaufruf für die Methode LoadAusgang(), die alle Ausgänge in einer Liste zurückliefert.
         public Ausgang()
         {
             InitializeComponent();
             ApiHelper.InitializeClient();
             LoadAusgang();
         }
+
+        //Daten aus Ausgänge werden der Variable ausgang zugewiesen.
         private void LoadAusgang()
         {
             ausgang = SqliteDataAccess.LoadAusgang();
@@ -31,6 +35,7 @@ namespace WindowsFormsApp
 
         }
 
+        //Button zum ausgeben der Temperaturdaten
         private async void button1_Click(object sender, EventArgs e)
         {
             var PumpeSolar = await Ausgaenge.LoadPumpeSolar();
@@ -54,7 +59,7 @@ namespace WindowsFormsApp
             ausgaenge.Mischer_Auf = Mischer_Auf.val;
             ausgaenge.Mischer_Zu = Mischer_Zu.val;
             ausgaenge.Pumpe_Hzkr = Pumpe_Hzkr.val;
-        ausgaenge.Pumpe_Solar = PumpeSolar.val;
+            ausgaenge.Pumpe_Solar = PumpeSolar.val;
             ausgaenge.Pumpe_Sole = Pumpe_Sole.val;
             ausgaenge.Pumpe_Zirku = pumpe_Zirku.val;
             ausgaenge.Ventil_Solar1 = Ventil_Solar1.val;
@@ -65,7 +70,7 @@ namespace WindowsFormsApp
             ausgaenge.Wp_Anf = Wp_Anf.val;
             ausgaenge.date = DateTime.Now.ToString();
 
-
+            //Ausgabe für die Textfelder auf dem Main Panel 
             txtalm.Text = ausgaenge.Heizband_ALM.ToString();
             txtMischerAuf.Text = ausgaenge.Mischer_Auf.ToString();  
             txtMischerzu.Text = ausgaenge.Mischer_Zu.ToString();

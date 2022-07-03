@@ -16,14 +16,14 @@ namespace WindowsFormsApp
 {
     public partial class History : Form
     {
+        //String Format für die Ausgabe der Daten im Panel
         String stdDetails = "{0, -20} {1, -20} {2, -20} {3, -20} {4, -20} {5, -20} {6, -20} {7, -20} {8, -20} {9, -20} {10, -20} {11, -20} {12, -20} {13, -20} ";
         String stdDetails2 = "{0, -20} {1, -25} {2, -25} {3, -25} {4, -25} {5, -25} {6, -25} {7, -25} {8, -25} {9, -25} {10, -25} {11, -25} {12, -25} {13, -25} {14, -25}  {15, -25}  {16, -25}";
 
         List<EingaengeModel> eingaenge = new List<EingaengeModel>();
-        // List<AusgaengeModel> ausgang = new List<AusgaengeModel>();
-         List<AusgaengeModel> ausgang = new List<AusgaengeModel>();
+        List<AusgaengeModel> ausgang = new List<AusgaengeModel>();
 
-
+        //Initialisierung vom API Helper und Konstruktoraufruf für Eingänge und Ausgänge.
         public History()
         {
             InitializeComponent();
@@ -32,6 +32,7 @@ namespace WindowsFormsApp
             LoadAusgang();
         }
 
+        //Laden der Temperatur in einem bestimmten StringFormat.
         private void LoadTemp()
         {
             eingaenge = SqliteDataAccess.LoadEingang();
@@ -56,6 +57,8 @@ namespace WindowsFormsApp
 
         }
 
+        //Laden der Zustände in einem bestimmten StringFormat.
+
         private void LoadAusgang()
         {
            ausgang = SqliteDataAccess.LoadAusgang();
@@ -78,16 +81,9 @@ namespace WindowsFormsApp
 );
         }
 
-        //private async void button1_Click(object sender, EventArgs e)
-        //{
-
-        //    listboxeingang.Items.Clear();
-        //    WiredUpList();
-
-
-
-        //}
-
+    
+     
+        //MainPanel scrollbar machen
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             listboxeingang.HorizontalScrollbar = true;
@@ -96,8 +92,8 @@ namespace WindowsFormsApp
 
         private void Compare1()
         {
-          //  listboxeingang.Items.Clear();
-
+            //Linq Abfrage zum vergleichen der 2 Daten 
+            //Wenn das gleiche Datum für das ausgewählte Datum enthalten ist, soll eine Liste der Daten für den Tag zurückgegeben werden.
             var queryAllCustomers = (from a in ausgang
                                      where a.date.ToString().Contains(dateTimePicker2.Text)
                                      select a).ToList();
@@ -110,8 +106,8 @@ namespace WindowsFormsApp
 
         private void Compare2()
         {
-            //  listboxeingang.Items.Clear();
-
+            //Linq Abfrage zum vergleichen der 2 Daten 
+            //Wenn das gleiche Datum für das ausgewählte Datum enthalten ist, soll eine Liste der Daten für den Tag zurückgegeben werden.
             var queryAllCustomers = (from a in eingaenge
                                      where a.date.ToString().Contains(dateTimePicker2.Text)
                                      select a).ToList();
@@ -123,6 +119,7 @@ namespace WindowsFormsApp
         }
         private void WiredUpList2()
         {
+            //Methode für das Auflisten der Daten in einem bestimmten StringFormat und mit Abgleich der Daten
 
             listboxeingang.Items.Clear();
             listboxeingang.Items.Add(String.Format(stdDetails2,
@@ -153,6 +150,9 @@ namespace WindowsFormsApp
 
         private void WiredUpList1()
         {
+            //Methode für das Auflisten der Daten in einem bestimmten StringFormat und mit Abgleich der Daten
+
+
 
             listboxeingang.Items.Clear();
             listboxeingang.Items.Add(String.Format(stdDetails, 

@@ -60,15 +60,9 @@
     <Compile Include="ApiHelper\ApiHelper.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Models\Ausgänge\AusgaengeModel.cs" />
-    <Compile Include="Models\Eingänge\AussenluftModel.cs" />
     <Compile Include="Models\Eingänge\EingaengeModel.cs" />
-    <Compile Include="Models\Eingänge\FBHModel.cs" />
     <Compile Include="Models\JsonAusgang.cs" />
     <Compile Include="Models\JsonModel.cs" />
-    <Compile Include="Models\Eingänge\PSModel.cs" />
-    <Compile Include="Models\Eingänge\SolarRLModel.cs" />
-    <Compile Include="Models\Eingänge\WPModel.cs" />
-    <Compile Include="Models\Eingänge\ZisterneModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqliteDataAccess.cs" />
   </ItemGroup>

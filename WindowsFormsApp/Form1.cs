@@ -15,7 +15,7 @@ namespace WindowsFormsApp
 
 
 
-
+        //Initialisierung des API Helpers
         public Form1()
         {
             InitializeComponent();
@@ -23,6 +23,7 @@ namespace WindowsFormsApp
 
         }
 
+        //Methode zum navigieren zwischen den einzelnen Seiten
         public void loadform(object Form)
         {
             if (this.mainpanel.Controls.Count > 0)
@@ -118,10 +119,13 @@ namespace WindowsFormsApp
 
         }
 
+        //Wenn der Button geklickt wird, soll er die Forms für die Ausgänge öffnen
         private void ausgangbtn_Click(object sender, EventArgs e)
         {
             loadform(new Ausgang());
         }
+
+        //Wenn der Button geklickt wird, soll er die Forms für die Eingänge öffnen
 
         private void eingangbtn_Click_1(object sender, EventArgs e)
         {

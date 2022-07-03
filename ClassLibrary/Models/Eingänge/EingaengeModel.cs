@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
+    //Klassenmodell für die Eingänge 
+
     public class EingaengeModel
     {
 

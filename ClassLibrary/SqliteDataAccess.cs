@@ -12,8 +12,11 @@ namespace ClassLibrary
 {
     public class SqliteDataAccess
     {
-     
 
+
+        //SQL Abfragen für das laden der Daten aus den einzelnen Tabellen. 
+        //Die Daten sollen danach als Liste ausgegeben werden
+        
         public static List<AusgaengeModel> LoadAusgang()
         {
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
@@ -40,8 +43,7 @@ namespace ClassLibrary
 
 
       
-
-
+        //Die abgefragten Daten sollen mit Hilfe der Models in die Datenbank geladen werden.
         public static void SaveAusgang(AusgaengeModel ausgaenge)
         {
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
@@ -58,7 +60,7 @@ namespace ClassLibrary
             }
         }
 
-
+        //Der Connections String für den Aufbau der Verbindung zu Datenbank
         private static string LoadConnectionString (string id = "Default")
         {
             return ConfigurationManager.ConnectionStrings[id].ConnectionString;

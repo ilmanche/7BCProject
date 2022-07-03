@@ -6,8 +6,10 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace ClassLibrary
 {
+    //Erstellen und Initialisieren von HttpClient
     public static class ApiHelper
     {
         public static HttpClient ApiClient { get; set; } 

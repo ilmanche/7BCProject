@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
+    //Crud Abfragen für alle Geräte 
+    //Daten werden im entsprechendem JSON Model zurückgegeben und deserialisiert. 
+    
     public class SolarPanel
     {
         public static async Task<JsonModel> LoadSolarPanelData()
         {
             string url = "http://localhost:8087/get/modbus.0.holdingRegisters.40010_Solar_RL";
-
             using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
             {
                 if (response.IsSuccessStatusCode)

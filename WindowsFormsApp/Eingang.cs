@@ -18,6 +18,8 @@ namespace WindowsFormsApp
         List<EingaengeModel> eingaenge = new List<EingaengeModel>();
 
 
+        //Initialisierung des API Clients 
+        //Konstrukturaufruf für die Methode LoadEingang(), die alle Ausgänge in einer Liste zurückliefert.
         public Eingang()
         {
             InitializeComponent();
@@ -32,7 +34,7 @@ namespace WindowsFormsApp
         {
 
         }
-
+        //Daten aus Ausgänge werden der Variable eingang zugewiesen.
         private void LoadEingang()
         {
 
@@ -44,7 +46,7 @@ namespace WindowsFormsApp
 
 
     
-
+        //Button mit dem die Zustände der einzelnen Geräte zurückgeliefert werden.
         private async void btnStart_Click(object sender, EventArgs e)
         {
             var solar = await Eingaenge.LoadSolarPanelData();
@@ -111,7 +113,7 @@ namespace WindowsFormsApp
 
 
 
-
+            //Ausgabe für die Textfelder auf dem Main Panel 
             txtsolar.Text = solar.val.ToString() + "°C";
             txtKollektor.Text = eingang.Kollektor.ToString() + "°C";
             txtaussen.Text = eingang.aussen_temperatur.ToString() + "°C";

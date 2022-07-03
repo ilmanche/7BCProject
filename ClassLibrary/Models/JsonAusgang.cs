@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary.Models
 {
+    //RÜckgabetyp für die Crud Abfragen (Ausgänge)
     public class JsonAusgang
     {
         public bool val { get; set; }
